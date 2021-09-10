@@ -1,0 +1,25 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #26212e;
+  color: white;
+  padding: 10px;
+}
+
+.header__left {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.header__center {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.header__right > button {
+  padding: 10px 10px;
+  margin: 0 5px;
+  cursor: pointer;
+}
