@@ -10,7 +10,7 @@ function Banner() {
         <div className="intro__background">
           <video
             className="intro__backgroundVideo"
-            autoplay
+            autoPlay
             loop
             muted
             src={Video}
