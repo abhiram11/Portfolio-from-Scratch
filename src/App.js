@@ -7,6 +7,9 @@ function App() {
     <div className="app">
       <Header />
       <Intro />
+      {/* <Projects />
+      <WorkEx />
+      <Contact /> */}
     </div>
   );
 }

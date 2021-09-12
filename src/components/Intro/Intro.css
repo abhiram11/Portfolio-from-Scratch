@@ -40,6 +40,11 @@
 }
 
 .item > h3 {
+  position: relative;
   /* margin: auto; */
-  /* padding-top: 30px; */
+  padding-top: 25%;
+  padding-right: 10%;
+  padding-left: 10%;
+  padding-bottom: 25%;
+  /* text-align: center; */
 }

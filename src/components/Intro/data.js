@@ -1,4 +1,6 @@
 // Gradients taken from: https://webgradients.com/
+export const introductionDescription = [{}];
+
 export const data = [
   {
     name: "Rare Wind",
@@ -19,7 +21,7 @@ export const data = [
     description: "#e0c3fc → #8ec5fc",
     css: "linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%)",
     height: 400,
-    title: "Data Science (numpy, pandas, tensorflow, keras, tf serving, ++)",
+    title: "Data Science (numpy, pandas, TF, TF X, TF Serving)",
   },
   {
     name: "Ripe Malinka",
@@ -54,7 +56,7 @@ export const data = [
     description: "#ebc0fd → #d9ded8",
     css: "linear-gradient(135deg, #ebc0fd 0%, #d9ded8 100%)",
     height: 400,
-    title: "Visualizations and Animations",
+    title: "Visualizations, Animations and Game Dev",
   },
   {
     name: "Sunny Morning",
@@ -89,27 +91,27 @@ export const data = [
     description: " #c1dfc4 → #deecdd",
     css: "linear-gradient(135deg, #c1dfc4 0%, #deecdd 100%)",
     height: 400,
-    title: "Data and Feature Extraction, Web Scraping and Crawling, etc.",
-  },
-  {
-    name: "Japan Blush",
-    description: " #ddd6f3 → #faaca8",
-    css: "linear-gradient(135deg, #ddd6f3 0%, #faaca8 100%, #faaca8 100%)",
-    height: 200,
-    title: "Game Development",
+    title: "Data and Feature Extraction, Crawler",
   },
   {
     name: "Near Moon",
     description: "#5ee7df → #b490ca",
     css: "linear-gradient(135deg, #5ee7df 0%, #b490ca 100%)",
     height: 400,
-    title: "Startups, Incubations and National Competition Representative",
+    title: "Startups and National Competition Representative",
   },
   {
     name: "Ladoga Bottom",
     description: "#ebc0fd → #d9ded8",
     css: "linear-gradient(135deg, #ebc0fd 0%, #d9ded8 100%)",
     height: 400,
-    title: "Entrepreneurship and Research Assistant Experience",
+    title: "Entrepreneur and Research Assistant Experience",
+  },
+  {
+    name: "Japan Blush",
+    description: " #ddd6f3 → #faaca8",
+    css: "linear-gradient(135deg, #ddd6f3 0%, #faaca8 100%, #faaca8 100%)",
+    height: 200,
+    title: "Went to IIT Kharagpur and IIM Calcutta (Not as student)",
   },
 ];
