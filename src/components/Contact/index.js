@@ -5,9 +5,23 @@ import "./Contact.css";
 function Contact() {
   return (
     <>
+      <div className="contact__header">
+        <h3>Connect with me at : </h3>
+      </div>
       <div className="contact">
         <div className="contact__left">
           {/* Github, Youtube, LinkedIn, Twitter, Hackerrank */}
+          <a
+            href="https://twitter.com/abhiram_satpute"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img
+              src="https://img.shields.io/badge/twitter-%231DA1F2.svg?&style=for-the-badge&logo=twitter&logoColor=white"
+              alt="Twitter"
+            />
+          </a>
+          &nbsp;&nbsp;
           <a
             href="https://www.linkedin.com/in/abhiram-satpute/"
             target="_blank"
@@ -30,17 +44,6 @@ function Contact() {
               height="58"
               alt="profile for Abhiram Satput&#233; at Stack Overflow, Q&amp;A for professional and enthusiast programmers"
               title="More than 64K+ Profiles Reached as well!"
-            />
-          </a>
-          &nbsp;&nbsp;
-          <a
-            href="https://twitter.com/abhiram_satpute"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <img
-              src="https://img.shields.io/badge/twitter-%231DA1F2.svg?&style=for-the-badge&logo=twitter&logoColor=white"
-              alt="Twitter"
             />
           </a>
           &nbsp;&nbsp;

@@ -1,6 +1,9 @@
 import React from "react";
 import "./Projects.css";
 import Video from "../../media/projects3.mp4";
+import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
+import ArrowForwardIcon from "@material-ui/icons/ArrowForward";
+import TrendingFlatIcon from "@material-ui/icons/TrendingFlat";
 
 import "./Projects.css";
 
@@ -17,20 +20,21 @@ function Projects() {
           type="video/mp4"
         ></video>
       </div>
-      <h4>(wait for it)</h4>
       <h3>
         &nbsp;&nbsp;You can also check out my{" "}
         <span style={{ color: "black" }}>Projects Portfolio</span> on my
         Youtube-esque Project!
       </h3>
-      <a
-        className="projects__link"
-        href="https://yt-clone-abhiram.web.app/"
-        target="_blank"
-        rel="noreferrer"
-      >
-        Let's Go!
-      </a>
+      <div className="projects__button">
+        <a
+          className="projects__link"
+          href="https://yt-clone-abhiram.web.app/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Let's Go! <ArrowForwardIcon />
+        </a>
+      </div>
     </div>
   );
 }

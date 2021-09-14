@@ -40,7 +40,9 @@
   border-radius: 6px;
   transition: all 0.3s ease-in-out;
 }
-
+.projects__button {
+  display: flex;
+}
 .projects__link:hover {
   color: white;
   background-color: black;

@@ -48,13 +48,13 @@ function Intro() {
           className="container"
           onClick={() => set((open) => !open)}
         >
-          {open ? null : <h1>TL;DR My Skills</h1>}
+          {open ? null : <h2>TL;DR My Skills</h2>}
           {transition((style, item) => (
             <animated.div
               className="item"
               style={{ ...style, background: item.css }}
             >
-              <h3>{item?.title}</h3>
+              <h4>{item?.title}</h4>
             </animated.div>
           ))}
         </animated.div>
