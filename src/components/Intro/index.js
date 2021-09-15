@@ -1,7 +1,5 @@
 import React, { useState } from "react";
-import Typical from "react-typical";
-// import styles from "./styles.module.css";
-
+import { data } from "./data";
 import "./Intro.css";
 import {
   useTransition,
@@ -11,7 +9,7 @@ import {
   animated,
   useSpringRef,
 } from "@react-spring/web";
-import { data } from "./data";
+import Banner from "../Banner";
 
 function Intro() {
   const [open, set] = useState(false);
@@ -43,36 +41,20 @@ function Intro() {
 
   return (
     <>
-      <div className="intro">
-        <div className="intro__title">
-          <h1>Hi, I'm Abhiram Satpute</h1>
-          <Typical
-            loop={Infinity}
-            wrapper="h4"
-            steps={[
-              "Experienced Data Scientist 🚀",
-              500,
-              "Budding Full Stack Developer 💻",
-              500,
-              "Thanks for staying > 10 seconds here 😊",
-              500,
-            ]}
-          />
-        </div>
-      </div>
+      <Banner />
       <div className="wrapper">
         <animated.div
           style={{ ...rest, width: size, height: size }}
           className="container"
           onClick={() => set((open) => !open)}
         >
-          {open ? null : <h1>TL;DR My Skills</h1>}
+          {open ? null : <h2>TL;DR My Skills</h2>}
           {transition((style, item) => (
             <animated.div
               className="item"
               style={{ ...style, background: item.css }}
             >
-              <h3>{item?.title}</h3>
+              <h4>{item?.title}</h4>
             </animated.div>
           ))}
         </animated.div>
