@@ -35,7 +35,7 @@ function Banner() {
             options,
             "Budding Full Stack Developer 💻",
             500,
-            "Thanks for staying > 10 seconds here 😊",
+            "Thanks for staying > 10 seconds here 😁",
             500,
           ]}
         />
