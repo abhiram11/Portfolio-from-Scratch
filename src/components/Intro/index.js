@@ -42,7 +42,7 @@ function Intro() {
   return (
     <>
       <Banner />
-      <div className="wrapper">
+      {/* <div className="wrapper">
         <animated.div
           style={{ ...rest, width: size, height: size }}
           className="container"
@@ -58,7 +58,7 @@ function Intro() {
             </animated.div>
           ))}
         </animated.div>
-      </div>
+      </div> */}
     </>
   );
 }

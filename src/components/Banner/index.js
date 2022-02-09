@@ -1,6 +1,6 @@
 import React from "react";
 import Typical from "react-typical";
-import Video from "../../media/intro-background.mp4";
+import Video from "../../media/intro-background-3.mp4";
 import "./Banner.css";
 
 function Banner() {
