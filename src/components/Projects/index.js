@@ -18,12 +18,12 @@ function Projects() {
           muted
           src={Video}
           type="video/mp4"
-        ></video>
+        />
       </div>
       <h3>
         &nbsp;&nbsp;You can also check out my{" "}
-        <span style={{ color: "black" }}>Projects Portfolio</span> on my
-        Youtube-esque Project!
+        <span style={{ color: "black" }}>Projects Portfolio</span> on my GitHub
+        Profile!
       </h3>
       <div className="projects__button">
         <a
@@ -32,7 +32,10 @@ function Projects() {
           target="_blank"
           rel="noreferrer"
         >
-          Let's Go! <ArrowForwardIcon />
+          <p>Let's Go! </p>
+          <ArrowForwardIcon />
+          <ArrowForwardIosIcon />
+          <TrendingFlatIcon />
         </a>
       </div>
     </div>

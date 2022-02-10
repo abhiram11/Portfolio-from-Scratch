@@ -13,7 +13,7 @@ function App() {
       <Banner />
       <TextualContent />
       <Intro />
-      {/* <Projects /> */}
+      <Projects />
       {/* <Projects />
       <WorkEx />
       <Contact /> */}
