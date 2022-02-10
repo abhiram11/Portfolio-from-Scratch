@@ -1,8 +1,10 @@
 .projects {
   position: relative;
   background: none;
+  border: 1px solid red;
   color: whitesmoke;
-  margin-bottom: 200px;
+  padding-top: 90px;
+  padding-bottom: 50px;
 }
 
 .projects__background {
@@ -25,24 +27,29 @@
   background: #232a34;
 }
 
-.projects > h3 {
-  margin-top: 85px;
-  margin-bottom: 30px;
+.projects__button {
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  margin-top: 20px;
+  border: 1px solid red;
 }
 
 .projects__link {
-  margin-top: 20px;
+  display: flex;
   padding: 10px 6px;
   text-decoration: none;
-  /* background-color: black; */
   color: black;
   border: 1px solid black;
   border-radius: 6px;
   transition: all 0.3s ease-in-out;
 }
-.projects__button {
-  display: flex;
+
+/* MuiSvgIcon-root */
+.projects__link > .MuiSvgIcon-root {
+  padding-bottom: 4px;
 }
+
 .projects__link:hover {
   color: white;
   background-color: black;

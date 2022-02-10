@@ -1,6 +1,7 @@
 import "./App.css";
 import Banner from "./components/Banner";
 import Contact from "./components/Contact";
+import Experience from "./components/Experience";
 import Header from "./components/Header";
 import Intro from "./components/Intro";
 import Projects from "./components/Projects";
@@ -13,10 +14,8 @@ function App() {
       <Banner />
       <TextualContent />
       <Intro />
-      {/* <Projects /> */}
-      {/* <Projects />
-      <WorkEx />
-      <Contact /> */}
+      <Experience />
+      <Projects />
       <Contact />
     </div>
   );

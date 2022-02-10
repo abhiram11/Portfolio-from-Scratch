@@ -1,7 +1,6 @@
 .textual__content {
   border: 1px solid red;
-  padding: 1rem 8px;
-  /* padding-bottom: 0px; */
+  padding: 1rem 2rem;
   text-align: left;
 }
 

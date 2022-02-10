@@ -21,7 +21,7 @@ export const data = [
     description: "#e0c3fc → #8ec5fc",
     css: "linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%)",
     height: 400,
-    title: "Data Science (TF, TF X, TF Serving, TF Lite)",
+    title: "Data Science (TF, Keras, TF X, TF Serving, TF Lite, numpy, pandas)",
   },
   {
     name: "Ripe Malinka",
