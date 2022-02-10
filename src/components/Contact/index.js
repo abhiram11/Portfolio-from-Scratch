@@ -1,5 +1,4 @@
 import React from "react";
-import Photo from "../../media/myname.gif";
 import "./Contact.css";
 
 function Contact() {
@@ -69,10 +68,6 @@ function Contact() {
             />
           </a>
           &nbsp;&nbsp;
-        </div>
-        <div className="contact__right">
-          {/* Right */}
-          <img src={Photo} alt="Graphic Signature" />
         </div>
       </div>
     </>

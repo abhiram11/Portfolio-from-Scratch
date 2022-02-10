@@ -1,19 +1,24 @@
 .contact {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+}
+
+.contact__header {
+  padding: 1rem 0;
 }
 
 .contact__left {
   display: flex;
   align-items: center;
-  padding-left: 10px;
+  padding-bottom: 2rem;
+  /* padding-left: 10px; */
 }
 
-.contact__right {
+/* .contact__right {
   padding-right: 10px;
 }
 
 .contact__right > img {
   object-fit: contain;
   width: 240px;
-}
+} */

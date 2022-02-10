@@ -22,7 +22,7 @@ function Banner() {
             muted
             src={Video}
             type="video/mp4"
-          ></video>
+          />
         </div>
         <h1>Hi, I'm Abhiram Satpute</h1>
         <Typical
