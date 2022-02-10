@@ -34,10 +34,19 @@ function index() {
         </div>
         <div>
           {/* Right */}
-          <img src={Photo} alt="Graphic Signature" />
+          <img
+            src={Photo}
+            alt="Graphic Signature"
+            style={{
+              "object-fit": "contain",
+              width: "320px",
+            }}
+          />
         </div>
       </div>
+      <div></div>
       <p>
+        <br />
         As part of my work, I have also been to IIT Kharagpur and IIM Calcutta,
         not as a student, but as an entrepreneur. I have worked directly with
         PhD Scholars and Professors of IIT Kharagpur right after my Bachelors!
