@@ -9,10 +9,18 @@ import {
   animated,
   useSpringRef,
 } from "@react-spring/web";
-import Banner from "../Banner";
+// import Banner from "../Banner";
+
+//
+//
+//
+// Change min height of wrapper
+//
+//
+//
 
 function Intro() {
-  const [open, set] = useState(false);
+  const [open, setOpen] = useState(false);
 
   const springApi = useSpringRef();
   const { size, ...rest } = useSpring({
@@ -20,8 +28,9 @@ function Intro() {
     config: config.stiff,
     from: { size: "20%", background: "hotpink" },
     to: {
-      size: open ? "100%" : "20%",
-      background: open ? "white" : "hotpink",
+      size: open ? "100%" : "22%",
+      // background: open ? "white" : "hotpink",
+      background: open ? "#26212e" : "hotpink",
     },
   });
 
@@ -41,14 +50,22 @@ function Intro() {
 
   return (
     <>
-      <Banner />
-      {/* <div className="wrapper">
+      {/* <Banner /> */}
+      <div className="wrapper">
         <animated.div
           style={{ ...rest, width: size, height: size }}
           className="container"
-          onClick={() => set((open) => !open)}
+          onClick={() => setOpen((open) => !open)}
         >
-          {open ? null : <h2>Click Me to View My Skills</h2>}
+          {open ? null : (
+            // <h2 className="item">
+            <h3>
+              Skillset
+              <br />
+              <br />
+              Click Me!
+            </h3>
+          )}
           {transition((style, item) => (
             <animated.div
               className="item"
@@ -58,7 +75,7 @@ function Intro() {
             </animated.div>
           ))}
         </animated.div>
-      </div> */}
+      </div>
     </>
   );
 }

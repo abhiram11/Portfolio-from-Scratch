@@ -1,6 +1,8 @@
 .textual__content {
   border: 1px solid red;
-  padding: 8px;
+  padding: 0px 8px;
+  /* padding-bottom: 0px; */
+  text-align: left;
 }
 
 .textual__content__top {
