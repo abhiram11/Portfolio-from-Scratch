@@ -4,7 +4,7 @@ import "./TextualContent.css";
 
 function index() {
   return (
-    <div className="textual__content">
+    <div className="textual__content" id="about">
       <div className="textual__content__top">
         <div>
           <h2>Who Am I?</h2>

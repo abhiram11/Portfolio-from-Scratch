@@ -9,7 +9,7 @@ import "./Projects.css";
 
 function Projects() {
   return (
-    <div className="projects">
+    <div className="projects" id="projects">
       <div className="projects__background">
         <video
           className="projects__backgroundVideo"
