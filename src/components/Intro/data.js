@@ -35,7 +35,7 @@ export const data = [
     description: "#fdfbfb → #ebedee",
     css: "linear-gradient(135deg, #E3FDF5 0%, #FFE6FA 100%)",
     height: 400,
-    title: "Soon : Redis, SocketIO, Pusher, Docker and K8s",
+    title: "In Progress: Redis, SocketIO, Pusher, Docker and K8s",
   },
   {
     name: "Near Moon",
@@ -44,6 +44,7 @@ export const data = [
     height: 400,
     title: "Tailwind, Styled Components, CSS, Material UI",
   },
+
   {
     name: "Wild Apple",
     description: "#d299c2 → #fef9d7",

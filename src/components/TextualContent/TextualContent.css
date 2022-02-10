@@ -1,4 +1,9 @@
 .textual__content {
-  display: flex;
   border: 1px solid red;
+  padding: 8px;
+}
+
+.textual__content__top {
+  display: flex;
+  justify-content: space-evenly;
 }
