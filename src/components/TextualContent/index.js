@@ -2,7 +2,7 @@ import React from "react";
 import Photo from "../../media/myname.gif";
 import "./TextualContent.css";
 
-function index() {
+function TextualContent() {
   return (
     <div className="textual__content" id="about">
       <div className="textual__content__top">
@@ -61,4 +61,4 @@ function index() {
   );
 }
 
-export default index;
+export default TextualContent;
