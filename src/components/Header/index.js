@@ -7,7 +7,7 @@ function Header() {
   return (
     <div className="header">
       <div className="header__left">Abhiram</div>
-      <div className="header__center">Center</div>
+      {/* <div className="header__center">Center</div> */}
       <div className="header__right">
         <LinkS
           to="about"
