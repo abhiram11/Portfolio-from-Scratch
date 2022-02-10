@@ -42,13 +42,13 @@ function Intro() {
   return (
     <>
       <Banner />
-      <div className="wrapper">
+      {/* <div className="wrapper">
         <animated.div
           style={{ ...rest, width: size, height: size }}
           className="container"
           onClick={() => set((open) => !open)}
         >
-          {open ? null : <h2>TL;DR My Skills</h2>}
+          {open ? null : <h2>Click Me to View My Skills</h2>}
           {transition((style, item) => (
             <animated.div
               className="item"
@@ -58,7 +58,7 @@ function Intro() {
             </animated.div>
           ))}
         </animated.div>
-      </div>
+      </div> */}
     </>
   );
 }

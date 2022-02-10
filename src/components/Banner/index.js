@@ -1,6 +1,6 @@
 import React from "react";
 import Typical from "react-typical";
-import Video from "../../media/intro-background.mp4";
+import Video from "../../media/intro-background-3.mp4";
 import "./Banner.css";
 
 function Banner() {
@@ -35,7 +35,7 @@ function Banner() {
             options,
             "Budding Full Stack Developer 💻",
             500,
-            "Thanks for staying > 10 seconds here 😊",
+            "Thanks for staying > 10 seconds here 😁",
             500,
           ]}
         />
