@@ -35,7 +35,7 @@ export const data = [
     description: "#fdfbfb → #ebedee",
     css: "linear-gradient(135deg, #E3FDF5 0%, #FFE6FA 100%)",
     height: 400,
-    title: "Soon : Redis, SocketIO, Pusher",
+    title: "Soon : Redis, SocketIO, Pusher, Docker and K8s",
   },
   {
     name: "Near Moon",
