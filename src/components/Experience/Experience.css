@@ -23,6 +23,10 @@
   border: 1px solid blue;
 }
 
+.experience__wrapper__duration {
+  color: gray;
+}
+
 .experience__wrapper__image > img {
   border: 1px solid green;
   height: 340px;

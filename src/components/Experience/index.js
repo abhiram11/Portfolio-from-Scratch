@@ -6,12 +6,13 @@ import titan from "../../media/Titan.jpg";
 
 function Experience() {
   return (
-    <div>
+    <div id="experience">
       <h2>Work Experience</h2>
       <div className="experience__wrapper">
         <div className="experience__wrapper__a">
           <div className="experience__wrapper__content">
             <h4>Data Scientist, hBits Online Platform Services</h4>
+            <p className="experience__wrapper__duration"></p>
             <p>Word word word</p>
           </div>
         </div>
@@ -19,6 +20,7 @@ function Experience() {
         <div className="experience__wrapper__b">
           <div className="experience__wrapper__content">
             <h4>Data Scientist, mBreath Technologies</h4>
+            <p className="experience__wrapper__duration"></p>
             <p>Word word word</p>
           </div>
         </div>
@@ -29,7 +31,7 @@ function Experience() {
           {/* just change their flex start etc stuff.... */}
           <div className="experience__wrapper__content">
             <h4>Titan Technology Tune-in 2.0, Tamil Nadu</h4>
-            <p></p>
+            <p className="experience__wrapper__duration">December 2020- 2021</p>
             <p>
               This forum enabled us to showcase our product and technology to
               TITAN senior management (Director, Managing Director, CEO, and
@@ -49,8 +51,10 @@ function Experience() {
         <div className="experience__wrapper__b">
           <div className="experience__wrapper__content">
             <h4>Health Trail Programme, IIM Calcutta</h4>
+            <p className="experience__wrapper__duration">December 2020- 2021</p>
+
             <p>
-              Health trail was a three month non-residential accelerator
+              Health Trail was a three month non-residential accelerator
               programme for healthcare startups hosted by IIM Calcutta and
               Villgro. Got to learn about brand development, market research,
               GTM strategies, balance sheet handling, agreements, and all round
@@ -66,7 +70,7 @@ function Experience() {
           {/* just change their flex start etc stuff.... */}
           <div className="experience__wrapper__content">
             <h4>Qualcomm Design in India Challenge</h4>
-            <p></p>
+            <p className="experience__wrapper__duration">December 2020- 2021</p>
             <p>
               This was one of the toughest startup programme to get selected.
               Our startup, mBreath, got ranked in Top 15 Nationwide Startups in
@@ -75,7 +79,8 @@ function Experience() {
               of Android Kernel programming, sensors interfacing with Qualcomm's
               Snapdragon processors, Java Native Interface (C and Java coding
               together), while researching and developing the AI models
-              simultaneously.
+              simultaneously. This is the only pic I could take during the super
+              busy two-day event.
             </p>
           </div>
           <div className="experience__wrapper__image">
