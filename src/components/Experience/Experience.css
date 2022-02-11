@@ -25,7 +25,8 @@
 
 .experience__wrapper__image > img {
   border: 1px solid green;
-  width: 140px;
+  height: 340px;
+  /* width: 140px; */
   object-fit: contain;
   /* height: 140px; */
   aspect-ratio: ;

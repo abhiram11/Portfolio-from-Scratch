@@ -10,14 +10,10 @@ function Experience() {
       <h2>Work Experience</h2>
       <div className="experience__wrapper">
         <div className="experience__wrapper__a">
-          {/* just change their flex start etc stuff.... */}
           <div className="experience__wrapper__content">
             <h4>Data Scientist, hBits Online Platform Services</h4>
             <p>Word word word</p>
           </div>
-          {/* <div className="experience__wrapper__image">
-            <img src={pic1} alt="hBits" />
-          </div> */}
         </div>
 
         <div className="experience__wrapper__b">
@@ -25,27 +21,25 @@ function Experience() {
             <h4>Data Scientist, mBreath Technologies</h4>
             <p>Word word word</p>
           </div>
-          {/* <div className="experience__wrapper__image">
-            <img src={pic1} alt="hBits" />
-          </div> */}
         </div>
       </div>
       <h2>Competitions and Entrepreneurship Experiences</h2>
       <div className="experience__wrapper">
         <div className="experience__wrapper__a">
+          {/* just change their flex start etc stuff.... */}
           <div className="experience__wrapper__content">
             <h4>Titan Technology Tune-in 2.0, Tamil Nadu</h4>
             <p></p>
             <p>
               This forum enabled us to showcase our product and technology to
-              TITAN senior management (Director, MD, CEO, and other executives).
-              The forum helped us to discuss and demonstrate our project and
-              research work and talk about the product's application, growth,
-              and use cases that are to be considered while entering the market.
-              The event was full of advanced researchers and projects led mainly
-              by PhD scholars and professors representing elite institutes
-              across India (IIT Kharagpur, Kanpur, Guwahati, IIIT Jabalpur,
-              etc.).
+              TITAN senior management (Director, Managing Director, CEO, and
+              other executives). The forum helped us to discuss and demonstrate
+              our project and research work and talk about the product's
+              application, growth, and use cases that are to be considered while
+              entering the market. The event was full of advanced researchers
+              and projects led mainly by PhD scholars and professors
+              representing elite institutes across India (IIT Kharagpur, Kanpur,
+              Guwahati, IIIT Jabalpur, etc.).
             </p>
           </div>
           <div className="experience__wrapper__image">
