@@ -36,6 +36,8 @@ function Projects() {
           <ArrowForwardIcon />
           <ArrowForwardIosIcon />
           <TrendingFlatIcon />
+
+          {/* REFER TO BANKING SITE HEROSECTION */}
         </a>
       </div>
     </div>
