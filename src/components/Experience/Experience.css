@@ -1,11 +1,33 @@
 .experience__wrapper {
   border: 1px solid black;
+  display: grid;
+  /* 
+  z-index: 1;
+  height: 860px;
+  width: 100%;
+  max-width: 1100px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 24px; */
+  justify-content: center;
 }
 
 .experience__wrapper__a {
   border: 1px solid red;
+  display: flex;
 }
 
 .experience__wrapper__b {
+  display: flex;
   border: 1px solid blue;
+}
+
+.experience__wrapper__image > img {
+  border: 1px solid green;
+  width: 140px;
+  object-fit: contain;
+  /* height: 140px; */
+  aspect-ratio: ;
+  /* height: 100%; */
+  /* object-fit: cover; */
 }
