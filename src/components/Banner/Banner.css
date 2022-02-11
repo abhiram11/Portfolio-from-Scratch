@@ -7,8 +7,13 @@
   position: relative;
 }
 .intro__title {
+  border: 1px solid red;
   padding: 25%;
   color: whitesmoke;
+}
+
+.intro__title > h1 {
+  border: 1px solid red;
 }
 
 .intro__background {

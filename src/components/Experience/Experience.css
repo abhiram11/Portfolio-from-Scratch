@@ -19,6 +19,7 @@
 
 .experience__wrapper__b {
   display: flex;
+  flex-direction: row-reverse;
   border: 1px solid blue;
 }
 

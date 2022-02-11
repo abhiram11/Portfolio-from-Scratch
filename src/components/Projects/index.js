@@ -28,7 +28,7 @@ function Projects() {
       <div className="projects__button">
         <a
           className="projects__link"
-          href="https://yt-clone-abhiram.web.app/"
+          href="https://github.com/abhiram11"
           target="_blank"
           rel="noreferrer"
         >
