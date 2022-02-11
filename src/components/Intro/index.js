@@ -9,7 +9,6 @@ import {
   animated,
   useSpringRef,
 } from "@react-spring/web";
-// import Banner from "../Banner";
 
 //
 //
@@ -26,10 +25,10 @@ function Intro() {
   const { size, ...rest } = useSpring({
     ref: springApi,
     config: config.stiff,
+    // from: { size: "20%", background: "hotpink" },
     from: { size: "20%", background: "hotpink" },
     to: {
-      size: open ? "100%" : "22%",
-      // background: open ? "white" : "hotpink",
+      size: open ? "100%" : "20%",
       background: open ? "#26212e" : "hotpink",
     },
   });
@@ -50,7 +49,6 @@ function Intro() {
 
   return (
     <>
-      {/* <Banner /> */}
       <div className="wrapper">
         <animated.div
           style={{ ...rest, width: size, height: size }}
@@ -58,13 +56,14 @@ function Intro() {
           onClick={() => setOpen((open) => !open)}
         >
           {open ? null : (
-            // <h2 className="item">
-            <h3>
-              Skillset
-              <br />
-              <br />
-              Click Me!
-            </h3>
+            <div style={{ width: "100%" }}>
+              <h3 style={{ "padding-left": "28px" }}>
+                Skill Set
+                <br />
+                <br />
+                Click Me!
+              </h3>
+            </div>
           )}
           {transition((style, item) => (
             <animated.div
