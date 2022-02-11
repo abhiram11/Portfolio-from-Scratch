@@ -1,5 +1,9 @@
+/* .experience {
+  padding: 2rem 0;
+} */
+
 .experience > h2 {
-  padding: 1rem 0;
+  padding: 2rem 0;
 }
 
 .experience__wrapper__upper {
@@ -30,6 +34,8 @@
 .experience__wrapper__b {
   display: flex;
   flex-direction: row-reverse;
+  padding: 1rem 0;
+
   /* border: 1px solid blue; */
 }
 

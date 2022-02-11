@@ -22,8 +22,16 @@ function Projects() {
       </div>
       <h3>
         You can also check out my{" "}
-        <span style={{ color: "black" }}>Projects Portfolio</span> on my GitHub
-        Profile!
+        <span
+          style={{
+            color: "black",
+            "padding-left": "15px",
+            "padding-right": "20px",
+          }}
+        >
+          Projects
+        </span>{" "}
+        on my GitHub Profile!
       </h3>
       <div className="projects__button">
         <a
