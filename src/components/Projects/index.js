@@ -1,9 +1,9 @@
 import React from "react";
 import "./Projects.css";
 import Video from "../../media/projects3.mp4";
-import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
+// import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
 import ArrowForwardIcon from "@material-ui/icons/ArrowForward";
-import TrendingFlatIcon from "@material-ui/icons/TrendingFlat";
+// import TrendingFlatIcon from "@material-ui/icons/TrendingFlat";
 
 import "./Projects.css";
 
@@ -21,21 +21,29 @@ function Projects() {
         />
       </div>
       <h3>
-        &nbsp;&nbsp;You can also check out my{" "}
-        <span style={{ color: "black" }}>Projects Portfolio</span> on my GitHub
-        Profile!
+        You can also check out my{" "}
+        <span
+          style={{
+            color: "black",
+            "padding-left": "15px",
+            "padding-right": "20px",
+          }}
+        >
+          Projects
+        </span>{" "}
+        on my GitHub Profile!
       </h3>
       <div className="projects__button">
         <a
           className="projects__link"
-          href="https://yt-clone-abhiram.web.app/"
+          href="https://github.com/abhiram11/Certifications"
           target="_blank"
           rel="noreferrer"
         >
-          <p>Let's Go! </p>
+          <p>Let's Go</p>
           <ArrowForwardIcon />
-          <ArrowForwardIosIcon />
-          <TrendingFlatIcon />
+          {/* <ArrowForwardIosIcon />
+          <TrendingFlatIcon /> */}
 
           {/* REFER TO BANKING SITE HEROSECTION */}
         </a>

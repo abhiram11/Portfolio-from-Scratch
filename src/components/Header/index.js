@@ -20,16 +20,6 @@ function Header() {
           <button className="nav__button">About</button>
         </LinkS>
         <LinkS
-          to="projects"
-          smooth={true}
-          duration={500}
-          spy={true}
-          exact="true"
-          offset={-80}
-        >
-          <button className="nav__button">Projects</button>
-        </LinkS>
-        <LinkS
           to="experience"
           smooth={true}
           duration={500}
@@ -38,6 +28,16 @@ function Header() {
           offset={-80}
         >
           <button className="nav__button">Experience</button>
+        </LinkS>
+        <LinkS
+          to="projects"
+          smooth={true}
+          duration={500}
+          spy={true}
+          exact="true"
+          offset={-80}
+        >
+          <button className="nav__button">Projects</button>
         </LinkS>
         <LinkS
           to="contact"

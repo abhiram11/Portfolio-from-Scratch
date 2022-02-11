@@ -3,9 +3,9 @@ import "./Contact.css";
 
 function Contact() {
   return (
-    <>
-      <div className="contact__header" id="contact">
-        <h3>Connect with me at : </h3>
+    <div className="contact__wrapper" id="contact">
+      <div className="contact__header">
+        <h4>Connect with me at : abhiramsatpute@gmail.com </h4>
       </div>
       <div className="contact">
         <div className="contact__left">
@@ -42,7 +42,7 @@ function Contact() {
               width="208"
               height="58"
               alt="profile for Abhiram Satput&#233; at Stack Overflow, Q&amp;A for professional and enthusiast programmers"
-              title="More than 64K+ Profiles Reached as well!"
+              title="More than 80K+ Profiles Reached as well!"
             />
           </a>
           &nbsp;&nbsp;
@@ -69,8 +69,9 @@ function Contact() {
           </a>
           &nbsp;&nbsp;
         </div>
+        {/* <div className="contact__right">Or write to me at: email</div> */}
       </div>
-    </>
+    </div>
   );
 }
 

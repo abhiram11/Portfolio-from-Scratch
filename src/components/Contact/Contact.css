@@ -1,3 +1,7 @@
+.contact__wrapper {
+  background-color: #26212e;
+}
+
 .contact {
   display: flex;
   justify-content: space-around;
@@ -5,6 +9,10 @@
 
 .contact__header {
   padding: 1rem 0;
+}
+
+.contact__header > h4 {
+  color: whitesmoke;
 }
 
 .contact__left {
