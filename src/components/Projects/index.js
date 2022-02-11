@@ -34,8 +34,8 @@ function Projects() {
         >
           <p>Let's Go! </p>
           <ArrowForwardIcon />
-          <ArrowForwardIosIcon />
-          <TrendingFlatIcon />
+          {/* <ArrowForwardIosIcon />
+          <TrendingFlatIcon /> */}
 
           {/* REFER TO BANKING SITE HEROSECTION */}
         </a>

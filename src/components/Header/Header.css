@@ -9,19 +9,19 @@
   color: white;
   padding: 10px;
   z-index: 999;
-  border: 1px solid green;
+  /* border: 1px solid green; */
 }
 
 .header__left {
   display: flex;
   align-items: center;
   padding-left: 1rem;
-  border: 1px solid green;
+  /* border: 1px solid green; */
 }
 
 .header__right {
   padding-right: 1rem;
-  border: 1px solid green;
+  /* border: 1px solid green; */
 }
 .nav__button {
   padding: 10px 10px;

@@ -2,18 +2,14 @@
   /* margin: 10px; */
   padding: 10px;
   color: red;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   border-color: black;
   position: relative;
 }
 .intro__title {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   padding: 25%;
   color: whitesmoke;
-}
-
-.intro__title > h1 {
-  border: 1px solid red;
 }
 
 .intro__background {
