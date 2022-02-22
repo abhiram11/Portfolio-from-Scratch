@@ -13,7 +13,7 @@ import {
 //
 //
 //
-// Change min height of wrapper
+// Change min height of wrapper, CHANGE QDIC PIC TO TTI2 AWARD
 //
 //
 //
