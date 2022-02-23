@@ -1,6 +1,6 @@
 import React from "react";
 import "./Experience.css";
-import qdic from "../../media/about.jpg";
+import qdic from "../../media/Titan2.jpg";
 import iimcip from "../../media/IIMCIP.jpg";
 import titan from "../../media/Titan.jpg";
 // import prize from "../../media/img_bg_1.jpg";
@@ -107,8 +107,8 @@ function Experience() {
               of Android Kernel programming, sensors interfacing with Qualcomm's
               Snapdragon processors, Java Native Interface (C and Java coding
               together), while researching and developing the AI models
-              simultaneously. This is the only pic I could take during the super
-              busy two-day event.
+              simultaneously. I could not take during the super busy two-day
+              event, so here's one from Titan event.
             </p>
           </div>
           <div className="experience__wrapper__image">

@@ -47,7 +47,7 @@ function Contact() {
           </a>
           &nbsp;&nbsp;
           <a
-            href="https://www.youtube.com/channel/UCfk8qjnhHsVTuygD9fwlx7g"
+            href="https://www.youtube.com/watch?v=PdPoZLLXtUY&list=PLID9TgPnYWiKwYgwLbX-jH0Zuabar_3ZD&index=9"
             target="_blank"
             rel="noreferrer"
           >
