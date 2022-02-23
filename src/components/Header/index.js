@@ -17,7 +17,7 @@ function Header() {
           exact="true"
           offset={-80}
         >
-          <button className="nav__button">About</button>
+          <p className="nav__button">About</p>
         </LinkS>
         <LinkS
           to="experience"
@@ -27,7 +27,7 @@ function Header() {
           exact="true"
           offset={-80}
         >
-          <button className="nav__button">Experience</button>
+          <p className="nav__button">Experience</p>
         </LinkS>
         <LinkS
           to="projects"
@@ -37,7 +37,7 @@ function Header() {
           exact="true"
           offset={-80}
         >
-          <button className="nav__button">Projects</button>
+          <p className="nav__button">Projects</p>
         </LinkS>
         <LinkS
           to="contact"
@@ -47,7 +47,7 @@ function Header() {
           exact="true"
           offset={-80}
         >
-          <button className="nav__button">Contact</button>
+          <p className="nav__button">Contact</p>
         </LinkS>
       </div>
     </div>
