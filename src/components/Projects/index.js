@@ -11,12 +11,125 @@ function Projects() {
   return (
     <>
       <div className="project__content" id="projects">
-        <h2>My Projects</h2>
-        <p>
-          Ranging from fully-fledged Web and Mobile Apps to Demo or Fragmentary
-          Applications, I have a wide range of projects to showcase my skills.
-          Have a look!
-        </p>
+        <div className="project__content__top">
+          <h2>Projects</h2>
+          <p>
+            Ranging from fully-fledged Web and Mobile Apps to Demo or
+            Fragmentary Applications, I have deployed a wide range of projects
+            implementing numerous technologies and libraries to showcase my
+            skills. Have a look!
+          </p>
+        </div>
+        <div className="project__content__bottom">
+          <p className="project__content__bottom__each">
+            <a
+              target="_blank"
+              href="https://www.youtube.com/watch?v=PdPoZLLXtUY"
+              rel="noopener noreferrer"
+            >
+              Tinder Clone 📺
+            </a>
+          </p>
+          <p className="project__content__bottom__each">
+            <a
+              target="_blank"
+              href="https://netflix-clone-77572.web.app/"
+              rel="noopener noreferrer"
+            >
+              Netflix Clone
+            </a>
+          </p>
+          <p className="project__content__bottom__each">
+            <a
+              target="_blank"
+              href="https://spotify-clone-e93b9.web.app/"
+              rel="noopener noreferrer"
+            >
+              Spotify Clone
+            </a>
+          </p>
+          <p className="project__content__bottom__each">
+            <a
+              target="_blank"
+              href="https://slack-clone-00001.firebaseapp.com/"
+              rel="noopener noreferrer"
+            >
+              Slack Clone
+            </a>
+          </p>
+          <p className="project__content__bottom__each">
+            <a
+              target="_blank"
+              href="https://myntra-clone-001abhi.netlify.app/"
+              rel="noopener noreferrer"
+            >
+              Myntra Clone
+            </a>
+          </p>
+          <p className="project__content__bottom__each">
+            <a
+              target="_blank"
+              href="https://www.youtube.com/watch?v=BGfSsugl-_8"
+              rel="noopener noreferrer"
+            >
+              Hand-Sign Recognition 📺
+            </a>
+          </p>
+          <p className="project__content__bottom__each">
+            <a
+              target="_blank"
+              href="https://www.youtube.com/watch?v=RMwmN4j0s5s"
+              rel="noopener noreferrer"
+            >
+              Zomato App UI Clone 📺
+            </a>
+          </p>
+          <p className="project__content__bottom__each">
+            <a
+              target="_blank"
+              href="https://tesla-clone-001.netlify.app/"
+              rel="noopener noreferrer"
+            >
+              Tesla Clone
+            </a>
+          </p>
+          <p className="project__content__bottom__each">
+            <a
+              target="_blank"
+              href="https://banking-clone-001abhi.netlify.app/"
+              rel="noopener noreferrer"
+            >
+              Banking Site
+            </a>
+          </p>
+          <p className="project__content__bottom__each">
+            <a
+              target="_blank"
+              href="https://yt-clone-abhiram.web.app/"
+              rel="noopener noreferrer"
+            >
+              Youtube Clone
+            </a>
+          </p>
+          <p className="project__content__bottom__each">
+            <a
+              target="_blank"
+              href="https://www.youtube.com/watch?v=D-rokQn3WRw"
+              rel="noopener noreferrer"
+            >
+              Github Info Catcher 📺
+            </a>
+          </p>
+          <p className="project__content__bottom__each">
+            <a
+              target="_blank"
+              href="https://github.com/abhiram11"
+              rel="noopener noreferrer"
+            >
+              AND Many More!
+            </a>
+          </p>
+        </div>
       </div>
       <div className="projects">
         <div className="projects__background">
