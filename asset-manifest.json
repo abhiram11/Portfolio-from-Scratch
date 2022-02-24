@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/Portfolio-from-Scratch/static/css/main.3811aebd.chunk.css",
-    "main.js": "/Portfolio-from-Scratch/static/js/main.bb1a4466.chunk.js",
-    "main.js.map": "/Portfolio-from-Scratch/static/js/main.bb1a4466.chunk.js.map",
+    "main.css": "/Portfolio-from-Scratch/static/css/main.4262625f.chunk.css",
+    "main.js": "/Portfolio-from-Scratch/static/js/main.7db6901f.chunk.js",
+    "main.js.map": "/Portfolio-from-Scratch/static/js/main.7db6901f.chunk.js.map",
     "runtime-main.js": "/Portfolio-from-Scratch/static/js/runtime-main.dc30ea60.js",
     "runtime-main.js.map": "/Portfolio-from-Scratch/static/js/runtime-main.dc30ea60.js.map",
     "static/js/2.6a5cbbe2.chunk.js": "/Portfolio-from-Scratch/static/js/2.6a5cbbe2.chunk.js",
     "static/js/2.6a5cbbe2.chunk.js.map": "/Portfolio-from-Scratch/static/js/2.6a5cbbe2.chunk.js.map",
     "index.html": "/Portfolio-from-Scratch/index.html",
-    "static/css/main.3811aebd.chunk.css.map": "/Portfolio-from-Scratch/static/css/main.3811aebd.chunk.css.map",
+    "static/css/main.4262625f.chunk.css.map": "/Portfolio-from-Scratch/static/css/main.4262625f.chunk.css.map",
     "static/js/2.6a5cbbe2.chunk.js.LICENSE.txt": "/Portfolio-from-Scratch/static/js/2.6a5cbbe2.chunk.js.LICENSE.txt",
     "static/media/IIMCIP.7837c734.jpg": "/Portfolio-from-Scratch/static/media/IIMCIP.7837c734.jpg",
+    "static/media/Projects3-1.b796433b.m4v": "/Portfolio-from-Scratch/static/media/Projects3-1.b796433b.m4v",
     "static/media/Titan.994d72e8.jpg": "/Portfolio-from-Scratch/static/media/Titan.994d72e8.jpg",
-    "static/media/Titan2.5fe7506a.jpg": "/Portfolio-from-Scratch/static/media/Titan2.5fe7506a.jpg",
+    "static/media/Titan4.9f8d48a1.jpg": "/Portfolio-from-Scratch/static/media/Titan4.9f8d48a1.jpg",
     "static/media/intro-background-3.6d75deef.mp4": "/Portfolio-from-Scratch/static/media/intro-background-3.6d75deef.mp4",
-    "static/media/myname.f23d8c38.gif": "/Portfolio-from-Scratch/static/media/myname.f23d8c38.gif",
-    "static/media/projects3.a1fa66d7.mp4": "/Portfolio-from-Scratch/static/media/projects3.a1fa66d7.mp4"
+    "static/media/myname.f23d8c38.gif": "/Portfolio-from-Scratch/static/media/myname.f23d8c38.gif"
   },
   "entrypoints": [
     "static/js/runtime-main.dc30ea60.js",
     "static/js/2.6a5cbbe2.chunk.js",
-    "static/css/main.3811aebd.chunk.css",
-    "static/js/main.bb1a4466.chunk.js"
+    "static/css/main.4262625f.chunk.css",
+    "static/js/main.7db6901f.chunk.js"
   ]
 }
