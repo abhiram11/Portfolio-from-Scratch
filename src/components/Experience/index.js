@@ -1,6 +1,6 @@
 import React from "react";
 import "./Experience.css";
-import qdic from "../../media/Titan2.jpg";
+import qdic from "../../media/Titan4.jpg";
 import iimcip from "../../media/IIMCIP.jpg";
 import titan from "../../media/Titan.jpg";
 // import prize from "../../media/img_bg_1.jpg";

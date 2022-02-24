@@ -21,6 +21,9 @@ function App() {
         <Projects />
         <Contact />
       </div>
+      {/* <div className="mobile">
+        <h1>Please open the app in Desktop Mode</h1>
+      </div> */}
     </>
   );
 }
