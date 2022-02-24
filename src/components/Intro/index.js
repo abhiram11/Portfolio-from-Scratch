@@ -57,11 +57,11 @@ function Intro() {
         >
           {open ? null : (
             <div style={{ width: "100%" }}>
-              <h3 style={{ "padding-left": "28px" }}>
-                Skill Set
+              <h3 style={{ "padding-top": "32px" }}>
+                Skills
+                {/* <br />
                 <br />
-                <br />
-                Click Me!
+                Click Me! */}
               </h3>
             </div>
           )}
