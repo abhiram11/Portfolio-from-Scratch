@@ -19,7 +19,7 @@
 }
 
 .experience__wrapper__lower {
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   display: flex;
   flex-direction: column;
   padding: 1rem;

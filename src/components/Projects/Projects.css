@@ -1,5 +1,6 @@
 .project__content {
   padding: 1rem;
+  border-top: 1px solid #e6e6e6;
 }
 
 .project__content__top > p {

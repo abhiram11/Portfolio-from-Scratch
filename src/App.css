@@ -3,20 +3,32 @@
   min-width: 692px; */
   width: 100vw;
   height: 100vh;
+  text-align: center;
+  max-width: 1100px;
+  margin: 0 auto;
+  /* background-color: whitesmoke; */
+}
+
+/* 
+
+.app {
+  max-width: 1100px;
+  min-width: 692px;
+  width: 100vw;
+  height: 100vh;
   position: relative;
-  /* top: 0;
+  top: 0;
   left: 0;
   right: 0;
-  bottom: 0; */
+  bottom: 0;
   text-align: center;
   max-width: 1100px;
   margin: 0 auto;
   background-color: white;
   z-index: -1;
-  /* // ????????????? */
 }
 
-/* .background {
+.background {
   position: fixed;
   top: 0;
   left: 0;
