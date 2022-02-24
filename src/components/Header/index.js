@@ -16,7 +16,7 @@ function Header() {
           offset={-80}
         >
           <p className="nav__button__left">
-            Home (bg black rest white n purpleish)
+            P.S.: Desktop only, not optimized for Mobile yet
           </p>
         </LinkS>
       </div>

@@ -19,10 +19,11 @@
 }
 
 .experience__wrapper__lower {
-  /* border: 1px solid blue; */
+  border: 1px solid blue;
   display: flex;
   flex-direction: column;
   padding: 1rem;
+  min-width: 360px;
 }
 
 .experience__wrapper__a {
@@ -52,11 +53,11 @@
   object-fit: contain;
 }
 
-.experience > img {
+/* .experience > img {
   width: 100%;
   object-fit: contain;
   padding: 1rem 0;
-}
+} */
 
 .border {
   border: 1px solid #e6e6e6;
