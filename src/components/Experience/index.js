@@ -5,6 +5,8 @@ import iimcip from "../../media/IIMCIP.jpg";
 import titan from "../../media/Titan.jpg";
 // import prize from "../../media/img_bg_1.jpg";
 
+//add media queries to remove photos or change sizes etc
+
 function Experience() {
   return (
     <div className="experience" id="experience">

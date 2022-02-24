@@ -56,15 +56,22 @@ function Intro() {
           onClick={() => setOpen((open) => !open)}
         >
           {open ? null : (
-            <div style={{ width: "100%" }}>
-              <h3 style={{ "padding-left": "28px" }}>
-                Skill Set
+            <div
+              style={{ width: "100%", position: "absolute", margin: "auto" }}
+            >
+              <h3
+                style={{
+                  // "padding-top": "32px",
+                  color: "#26212e",
+                }}
+              >
+                My Skills <br />
                 <br />
-                <br />
-                Click Me!
+                (Click Me!)
               </h3>
             </div>
           )}
+
           {transition((style, item) => (
             <animated.div
               className="item"

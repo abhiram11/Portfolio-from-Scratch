@@ -12,7 +12,7 @@ function Projects() {
     <>
       <div className="project__content" id="projects">
         <div className="project__content__top">
-          <h2>My Projects</h2>
+          <h2>Projects</h2>
           <p>
             Ranging from fully-fledged Web and Mobile Apps to Demo or
             Fragmentary Applications, I have deployed a wide range of projects
@@ -123,7 +123,7 @@ function Projects() {
           <p className="project__content__bottom__each">
             <a
               target="_blank"
-              href="https://github.com/abhiram11"
+              href="https://github.com/abhiram11/Deployments-and-Certifications"
               rel="noopener noreferrer"
             >
               AND Many More!
@@ -158,16 +158,12 @@ function Projects() {
         <div className="projects__button">
           <a
             className="projects__link"
-            href="https://github.com/abhiram11/Certifications"
+            href="https://github.com/abhiram11/Deployments-and-Certifications"
             target="_blank"
             rel="noreferrer"
           >
             <p>Let's Go</p>
             <ArrowForwardIcon />
-            {/* <ArrowForwardIosIcon />
-          <TrendingFlatIcon /> */}
-
-            {/* REFER TO BANKING SITE HEROSECTION */}
           </a>
         </div>
       </div>

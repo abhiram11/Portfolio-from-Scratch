@@ -1,5 +1,6 @@
 .project__content {
   padding: 1rem;
+  border-top: 1px solid #e6e6e6;
 }
 
 .project__content__top > p {
@@ -12,7 +13,6 @@
   justify-content: center;
   flex-wrap: wrap;
   margin: 0 auto;
-  border: 1px solid black;
 }
 
 .project__content__bottom__each {
