@@ -12,7 +12,7 @@ function Projects() {
     <>
       <div className="project__content" id="projects">
         <div className="project__content__top">
-          <h2>Projects</h2>
+          <h2>My Projects</h2>
           <p>
             Ranging from fully-fledged Web and Mobile Apps to Demo or
             Fragmentary Applications, I have deployed a wide range of projects

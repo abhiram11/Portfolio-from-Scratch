@@ -12,7 +12,7 @@ function Banner() {
   // type(options, 1000, 'Hello world!');
 
   return (
-    <div className="intro">
+    <div className="intro" id="banner">
       <div className="intro__title">
         <div className="intro__background">
           <video
