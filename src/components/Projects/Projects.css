@@ -8,7 +8,11 @@
 
 .project__content__bottom {
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
+  margin: 0 auto;
+  border: 1px solid black;
 }
 
 .project__content__bottom__each {
@@ -24,21 +28,21 @@
 .project__content__bottom__each > a {
   text-decoration: none;
   color: black;
-  /* text-color: black; */
-}
-
-.project__content__bottom__each:link {
-  text-decoration: none;
 }
 
 .project__content__bottom__each:hover {
-  transform: scale(1.05);
+  transform: scale(1.08);
+  background-color: #453c53;
+  /* background-color: #26212e; */
+}
+
+.project__content__bottom__each:hover > a {
+  color: white;
 }
 
 .projects {
   position: relative;
   background: none;
-  /* border: 1px solid red; */
   color: whitesmoke;
   padding-top: 100px;
   padding-bottom: 70px;

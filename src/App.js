@@ -9,15 +9,19 @@ import TextualContent from "./components/TextualContent";
 
 function App() {
   return (
-    <div className="app">
-      <Header />
-      <Banner />
-      <TextualContent />
-      <Intro />
-      <Experience />
-      <Projects />
-      <Contact />
-    </div>
+    <>
+      {/* <div className="background"></div> */}
+
+      <div className="app">
+        <Header />
+        <Banner />
+        <TextualContent />
+        <Intro />
+        <Experience />
+        <Projects />
+        <Contact />
+      </div>
+    </>
   );
 }
 

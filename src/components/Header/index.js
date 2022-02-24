@@ -6,8 +6,20 @@ import { Link as LinkS } from "react-scroll";
 function Header() {
   return (
     <div className="header">
-      <div className="header__left">Welcome</div>
-      {/* <div className="header__center">Center</div> */}
+      <div className="header__left">
+        <LinkS
+          to="banner"
+          smooth={true}
+          duration={500}
+          spy={true}
+          exact="true"
+          offset={-80}
+        >
+          <p className="nav__button__left">
+            Home (bg black rest white n purpleish)
+          </p>
+        </LinkS>
+      </div>
       <div className="header__right">
         <LinkS
           to="about"
