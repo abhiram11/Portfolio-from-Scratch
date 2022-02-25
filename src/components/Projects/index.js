@@ -1,11 +1,9 @@
-import React, { Suspense } from "react";
+import React from "react";
 import "./Projects.css";
-// import Video from "../../media/projects3.mp4";
 import Video from "../../media/Projects3-4.m4v";
-import LazyProject from "../../media/LazyProject3.JPG";
-// import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
+// import LazyProject from "../../media/LazyProject3.JPG";
 import ArrowForwardIcon from "@material-ui/icons/ArrowForward";
-// import TrendingFlatIcon from "@material-ui/icons/TrendingFlat";
+import { LazyLoadComponent } from "react-lazy-load-image-component";
 
 import "./Projects.css";
 
@@ -135,7 +133,7 @@ function Projects() {
       </div>
       <div className="projects">
         <div className="projects__background">
-          <Suspense
+          {/* <Suspense
             fallback={
               <img
                 src={LazyProject}
@@ -146,7 +144,8 @@ function Projects() {
                 }}
               />
             }
-          >
+          > */}
+          <LazyLoadComponent>
             <video
               className="projects__backgroundVideo"
               autoPlay
@@ -155,7 +154,9 @@ function Projects() {
               src={Video}
               type="video/mp4"
             />
-          </Suspense>
+          </LazyLoadComponent>
+
+          {/* </Suspense> */}
         </div>
         <h3>
           You can also check out my{" "}

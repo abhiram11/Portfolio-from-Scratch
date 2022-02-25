@@ -1,6 +1,10 @@
-import React, { Suspense } from "react";
-import LazyPhoto from "../../media/LazyName.JPG";
-import Photo from "../../media/myname2.gif";
+import React from "react";
+// import { LazyLoadImage } from "react-lazy-load-image-component";
+// import LazyPhoto from "../../media/LazyName.JPG";
+// import Photo from "../../media/myname2.gif";
+import Video from "../../media/Myname-3.m4v";
+import { LazyLoadComponent } from "react-lazy-load-image-component";
+
 import "./TextualContent.css";
 
 function TextualContent() {
@@ -33,30 +37,26 @@ function TextualContent() {
         to any technical team.
       </p> */}
         </div>
-        <div>
-          {/* Right */}
-          <Suspense
-            fallback={
-              <img
-                src={LazyPhoto}
-                alt="Gif Lazy"
-                style={{
-                  "object-fit": "contain",
-                  width: "320px",
-                }}
-              />
-            }
-          >
-            <img
-              src={Photo}
-              alt="Graphic Signature"
-              style={{
-                "object-fit": "contain",
-                width: "320px",
-              }}
-            />
-          </Suspense>
-        </div>
+        <LazyLoadComponent>
+          {/* <LazyLoadImage
+            src={Photo}
+            alt="Graphic Signature"
+            effect="blur"
+            style={{
+              width: "320px",
+              "object-fit": "contain",
+            }}
+            placeholderSrc={LazyPhoto}
+          /> */}
+          <video
+            // className="projects__backgroundVideo"
+            autoPlay
+            loop
+            muted
+            src={Video}
+            type="video/mp4"
+          />
+        </LazyLoadComponent>
       </div>
       <p>
         <br />
