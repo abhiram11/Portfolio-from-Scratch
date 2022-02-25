@@ -1,7 +1,8 @@
-import React from "react";
+import React, { Suspense } from "react";
 import "./Projects.css";
 // import Video from "../../media/projects3.mp4";
 import Video from "../../media/Projects3-4.m4v";
+import LazyProject from "../../media/LazyProject3.JPG";
 // import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
 import ArrowForwardIcon from "@material-ui/icons/ArrowForward";
 // import TrendingFlatIcon from "@material-ui/icons/TrendingFlat";
@@ -134,14 +135,27 @@ function Projects() {
       </div>
       <div className="projects">
         <div className="projects__background">
-          <video
-            className="projects__backgroundVideo"
-            autoPlay
-            loop
-            muted
-            src={Video}
-            type="video/mp4"
-          />
+          <Suspense
+            fallback={
+              <img
+                src={LazyProject}
+                alt="Project Lazy"
+                style={{
+                  "object-fit": "contain",
+                  width: "100%",
+                }}
+              />
+            }
+          >
+            <video
+              className="projects__backgroundVideo"
+              autoPlay
+              loop
+              muted
+              src={Video}
+              type="video/mp4"
+            />
+          </Suspense>
         </div>
         <h3>
           You can also check out my{" "}

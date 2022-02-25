@@ -1,6 +1,7 @@
-import React from "react";
+import React, { Suspense } from "react";
 import Typical from "react-typical";
 import Video from "../../media/intro-background-3.mp4";
+import Photo from "../../media/LazyBanner2.jpg";
 import "./Banner.css";
 
 function Banner() {
@@ -9,20 +10,35 @@ function Banner() {
     speed: 40,
   };
 
+  // const
+
   // type(options, 1000, 'Hello world!');
 
   return (
     <div className="intro" id="banner">
       <div className="intro__title">
         <div className="intro__background">
-          <video
-            className="intro__backgroundVideo"
-            autoPlay
-            loop
-            muted
-            src={Video}
-            type="video/mp4"
-          />
+          <Suspense
+            fallback={
+              <img
+                src={Photo}
+                alt="Banner Lazy"
+                style={{
+                  "object-fit": "contain",
+                  width: "100%",
+                }}
+              />
+            }
+          >
+            <video
+              className="intro__backgroundVideo"
+              autoPlay
+              loop
+              muted
+              src={Video}
+              type="video/mp4"
+            />
+          </Suspense>
         </div>
         <h1>Hi, I'm Abhiram Satpute</h1>
         <Typical

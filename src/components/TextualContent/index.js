@@ -1,5 +1,6 @@
-import React from "react";
-import Photo from "../../media/myname.gif";
+import React, { Suspense } from "react";
+import LazyPhoto from "../../media/LazyName.JPG";
+import Photo from "../../media/myname2.gif";
 import "./TextualContent.css";
 
 function TextualContent() {
@@ -34,17 +35,29 @@ function TextualContent() {
         </div>
         <div>
           {/* Right */}
-          <img
-            src={Photo}
-            alt="Graphic Signature"
-            style={{
-              "object-fit": "contain",
-              width: "320px",
-            }}
-          />
+          <Suspense
+            fallback={
+              <img
+                src={LazyPhoto}
+                alt="Gif Lazy"
+                style={{
+                  "object-fit": "contain",
+                  width: "320px",
+                }}
+              />
+            }
+          >
+            <img
+              src={Photo}
+              alt="Graphic Signature"
+              style={{
+                "object-fit": "contain",
+                width: "320px",
+              }}
+            />
+          </Suspense>
         </div>
       </div>
-      <div></div>
       <p>
         <br />
         As part of my work, I have also been to IIT Kharagpur and IIM Calcutta,
