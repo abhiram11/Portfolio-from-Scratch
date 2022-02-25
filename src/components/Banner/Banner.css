@@ -6,6 +6,7 @@
   border-color: black;
   position: relative;
 }
+
 .intro__title {
   /* border: 1px solid red; */
   padding: 25%;
@@ -30,4 +31,14 @@
   -o-object-fit: cover;
   object-fit: cover;
   background: #232a34;
+}
+
+@media screen and (max-width: 768px) {
+  .intro__title > h1 {
+    font-size: 16px;
+  }
+  /* 
+  .typed_text {
+    wrapper: h5;
+  } */
 }

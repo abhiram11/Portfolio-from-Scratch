@@ -1,5 +1,4 @@
 .textual__content {
-  /* border: 1px solid red; */
   padding: 2rem 2rem;
   text-align: left;
   position: relative;
@@ -8,4 +7,47 @@
 .textual__content__top {
   display: flex;
   justify-content: space-evenly;
+}
+
+.textual__content__video {
+  /* width: 50%; */
+  object-fit: contain;
+}
+
+/* .textual__content {
+  padding: 2rem 2rem;
+  text-align: left;
+  position: relative;
+}
+
+.textual__content__top {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.textual__content__top__left {
+  flex: 0.5;
+}
+
+.textual__content__top__right {
+  flex: 0.5;
+}
+*/
+@media screen and (max-width: 768px) {
+  .textual__content__top__left > h2 {
+    font-size: 14px;
+  }
+
+  .textual__content__top__left > p {
+    font-size: 10px;
+  }
+
+  .textual__content__video {
+    width: 40%;
+    object-fit: contain;
+  }
+
+  .textual__content > p {
+    font-size: 10px;
+  }
 }

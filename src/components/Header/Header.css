@@ -22,15 +22,17 @@
 .header__right {
   padding-right: 1rem;
   display: flex;
-
-  /* border: 1px solid green; */
 }
 
-/* @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .header__right {
-    visibility: hidden;
+    display: none;
   }
-} */
+
+  .header__left {
+    margin: 0 auto;
+  }
+}
 
 .nav__button__left {
   padding: 10px 10px;
@@ -59,4 +61,10 @@
   /* border-bottom: 2px solid whitesmoke; */
   opacity: 1;
   color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .header__right {
+    display: none;
+  }
 }
