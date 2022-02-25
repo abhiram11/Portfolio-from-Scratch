@@ -1,5 +1,10 @@
 import React from "react";
-import Photo from "../../media/myname.gif";
+// import { LazyLoadImage } from "react-lazy-load-image-component";
+// import LazyPhoto from "../../media/LazyName.JPG";
+// import Photo from "../../media/myname2.gif";
+import Video from "../../media/Myname-3.m4v";
+import { LazyLoadComponent } from "react-lazy-load-image-component";
+
 import "./TextualContent.css";
 
 function TextualContent() {
@@ -32,19 +37,27 @@ function TextualContent() {
         to any technical team.
       </p> */}
         </div>
-        <div>
-          {/* Right */}
-          <img
+        <LazyLoadComponent>
+          {/* <LazyLoadImage
             src={Photo}
             alt="Graphic Signature"
+            effect="blur"
             style={{
-              "object-fit": "contain",
               width: "320px",
+              "object-fit": "contain",
             }}
+            placeholderSrc={LazyPhoto}
+          /> */}
+          <video
+            // className="projects__backgroundVideo"
+            autoPlay
+            loop
+            muted
+            src={Video}
+            type="video/mp4"
           />
-        </div>
+        </LazyLoadComponent>
       </div>
-      <div></div>
       <p>
         <br />
         As part of my work, I have also been to IIT Kharagpur and IIM Calcutta,

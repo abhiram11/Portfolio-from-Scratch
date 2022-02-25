@@ -1,10 +1,14 @@
 import React from "react";
 import "./Experience.css";
 import qdic from "../../media/Titan4.jpg";
+import Lazyqdic from "../../media/LazyTitan4.jpg";
 import iimcip from "../../media/IIMCIP.jpg";
+import Lazyiimcip from "../../media/LazyIIMCIP.jpg";
 import titan from "../../media/Titan.jpg";
+import Lazytitan from "../../media/LazyTitan.jpg";
 // import prize from "../../media/img_bg_1.jpg";
 
+import { LazyLoadImage } from "react-lazy-load-image-component";
 //add media queries to remove photos or change sizes etc
 
 function Experience() {
@@ -48,7 +52,6 @@ function Experience() {
           </p>
         </div>
       </div>
-      {/* <img src={prize} alt="prize" /> */}
       <h2>Competitions and Entrepreneurship Experiences</h2>
       <div>
         <div className="experience__wrapper__a">
@@ -71,7 +74,16 @@ function Experience() {
             </p>
           </div>
           <div className="experience__wrapper__image">
-            <img src={titan} alt="TTI-2.0" />
+            <LazyLoadImage
+              src={titan}
+              alt="TTI-2.0"
+              effect="blur"
+              style={{
+                height: "340px",
+                "object-fit": "contain",
+              }}
+              placeholderSrc={Lazytitan}
+            />
           </div>
         </div>
         <div className="experience__wrapper__b">
@@ -91,7 +103,16 @@ function Experience() {
             </p>
           </div>
           <div className="experience__wrapper__image">
-            <img src={iimcip} alt="IIM Calcutta Innovation Park" />
+            <LazyLoadImage
+              src={iimcip}
+              alt="IIMCIP"
+              effect="blur"
+              style={{
+                height: "340px",
+                "object-fit": "contain",
+              }}
+              placeholderSrc={Lazyiimcip}
+            />
           </div>
         </div>
         <div className="experience__wrapper__a">
@@ -114,7 +135,16 @@ function Experience() {
             </p>
           </div>
           <div className="experience__wrapper__image">
-            <img src={qdic} alt="QDIC" />
+            <LazyLoadImage
+              src={qdic}
+              alt="QDIC"
+              effect="blur"
+              style={{
+                height: "340px",
+                "object-fit": "contain",
+              }}
+              placeholderSrc={Lazyqdic}
+            />
           </div>
         </div>
       </div>
