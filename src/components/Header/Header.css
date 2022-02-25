@@ -22,8 +22,15 @@
 .header__right {
   padding-right: 1rem;
   display: flex;
+
   /* border: 1px solid green; */
 }
+
+/* @media screen and (max-width: 768px) {
+  .header__right {
+    visibility: hidden;
+  }
+} */
 
 .nav__button__left {
   padding: 10px 10px;
