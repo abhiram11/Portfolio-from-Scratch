@@ -66,7 +66,6 @@ function Intro() {
                 }}
               >
                 My Skills <br />
-                {/* <br /> */}
                 <span style={{ fontSize: "14px" }}>(Click Me!)</span>
               </h3>
             </div>

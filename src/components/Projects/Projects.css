@@ -100,3 +100,23 @@
   color: white;
   background-color: black;
 }
+
+@media screen and (max-width: 768px) {
+  .project__content__top > h2 {
+    font-size: 14px;
+  }
+
+  .project__content__top > p {
+    font-size: 10px;
+  }
+
+  .project__content__bottom__each {
+    padding: 0.5rem;
+    font-size: 10px;
+  }
+
+  .projects > h3 {
+    /* margin: 0 auto; */
+    font-size: 10px;
+  }
+}
