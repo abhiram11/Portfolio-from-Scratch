@@ -38,9 +38,10 @@ function Contact() {
         >
           <LazyLoadImage
             src="https://stackoverflow.com/users/flair/8185479.png?theme=dark"
-            alt="More than 84K+ Profiles Reached as well!"
+            alt="Stack Overflow"
             effect="blur"
             className="contact__image__stackoverflow"
+            title="More than 84K+ Profiles Reached as well!"
           />
         </a>
         <a
