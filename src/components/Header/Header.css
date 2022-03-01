@@ -16,7 +16,6 @@
   display: flex;
   align-items: center;
   padding-left: 1rem;
-  /* border: 1px solid green; */
 }
 
 .header__right {
@@ -25,13 +24,17 @@
 }
 
 @media screen and (max-width: 768px) {
-  .header__right {
+  .header__left {
     display: none;
   }
 
-  .header__left {
+  .header__right {
     margin: 0 auto;
   }
+  /* 
+  .header__left {
+    margin: 0 auto;
+  } */
 }
 
 .nav__button__left {
@@ -61,10 +64,4 @@
   /* border-bottom: 2px solid whitesmoke; */
   opacity: 1;
   color: white;
-}
-
-@media screen and (max-width: 768px) {
-  .header__right {
-    display: none;
-  }
 }

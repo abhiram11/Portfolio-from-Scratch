@@ -16,9 +16,8 @@
 
 .experience__wrapper__lower {
   /* border: 1px solid blue; */
-  width: 20%;
+  width: 60%;
   display: flex;
-  /* flex: 0.5; */
   flex-direction: column;
   padding: 1rem;
   min-width: 360px;
@@ -28,6 +27,7 @@
   /* border: 1px solid red; */
   display: flex;
   padding: 1rem 0;
+  justify-content: space-around;
 }
 
 .experience__wrapper__b {
@@ -51,6 +51,8 @@
 }
 .experience__wrapper__image {
   height: 340px;
+  width: 100%;
+
   object-fit: contain;
 }
 

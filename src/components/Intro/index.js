@@ -60,13 +60,19 @@ function Intro() {
               style={{ width: "100%", position: "absolute", margin: "auto" }}
             >
               <h3
-                style={{
-                  // "padding-top": "32px",
-                  color: "#26212e",
-                }}
+                className="skills__cover__h3"
+                // style={{
+                //   // "padding-top": "32px",
+                //   color: "#26212e",
+                // }}
               >
                 My Skills <br />
-                <span style={{ fontSize: "14px" }}>(Click Me!)</span>
+                <span
+
+                // style={{ fontSize: "14px" }}
+                >
+                  (Click Me!)
+                </span>
               </h3>
             </div>
           )}
