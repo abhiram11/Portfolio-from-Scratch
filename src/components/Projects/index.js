@@ -13,9 +13,9 @@ function Projects() {
   const youtubeIcon = (
     <YouTubeIcon
       sx={{
-        fontSize: 32,
+        fontSize: 28,
         color: "red",
-        marginBottom: "-10px",
+        marginBottom: "-8px",
         marginTop: "-6px",
       }}
     />

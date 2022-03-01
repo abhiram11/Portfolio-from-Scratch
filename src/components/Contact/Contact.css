@@ -6,22 +6,22 @@
 .contact {
   display: flex;
   align-items: center;
-  padding-bottom: 2rem;
+  padding: 1rem 0;
   justify-content: center;
 }
 
 .contact > a {
   padding: 0 0.5rem;
   text-decoration: none;
-  color: white;
+  color: whitesmoke;
 }
 
-.contact > .MuiSvgIcon-root {
+/* .contact > .MuiSvgIcon-root {
   padding: 1rem;
-}
+} */
 
 .contact__header {
-  padding: 1rem 0;
+  /* padding: 1rem 0; */
 }
 
 .contact__header > h4 {
@@ -38,8 +38,20 @@
   /* height: 58px; */
 }
 
+.blogs > a {
+  color: whitesmoke;
+}
+
+.blogs > h4 {
+  color: whitesmoke;
+}
+
 @media screen and (max-width: 768px) {
   .contact__header > h4 {
+    font-size: 12px;
+  }
+
+  .blogs > h4 {
     font-size: 12px;
   }
 

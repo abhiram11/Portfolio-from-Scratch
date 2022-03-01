@@ -5,6 +5,7 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import YouTubeIcon from "@mui/icons-material/YouTube";
 import TwitterIcon from "@mui/icons-material/Twitter";
+import LaunchIcon from "@mui/icons-material/Launch";
 import "./Contact.css";
 
 function Contact() {
@@ -37,9 +38,10 @@ function Contact() {
         >
           <LazyLoadImage
             src="https://stackoverflow.com/users/flair/8185479.png?theme=dark"
-            alt="More than 84K+ Profiles Reached as well!"
+            alt="Stack Overflow"
             effect="blur"
             className="contact__image__stackoverflow"
+            title="More than 84K+ Profiles Reached as well!"
           />
         </a>
         <a
@@ -56,6 +58,18 @@ function Contact() {
         >
           <TwitterIcon sx={{ fontSize: 48 }} />
         </a>
+      </div>
+      <div className="blogs">
+        <h4>
+          Blogs: abhiramsatpute.hashnode.dev{" "}
+          <a
+            href="https://abhiramsatpute.hashnode.dev/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <LaunchIcon sx={{ marginBottom: "-6px", color: "whitesmoke" }} />
+          </a>
+        </h4>
       </div>
     </div>
     // <div className="contact__wrapper" id="contact">
