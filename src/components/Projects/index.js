@@ -2,12 +2,25 @@ import React from "react";
 import "./Projects.css";
 import Video from "../../media/Projects3-4.m4v";
 // import LazyProject from "../../media/LazyProject3.JPG";
-import ArrowForwardIcon from "@material-ui/icons/ArrowForward";
+// import ArrowForwardIcon from "@material-ui/icons/ArrowForward";
+import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+import YouTubeIcon from "@mui/icons-material/YouTube";
 import { LazyLoadComponent } from "react-lazy-load-image-component";
 
 import "./Projects.css";
 
 function Projects() {
+  const youtubeIcon = (
+    <YouTubeIcon
+      sx={{
+        fontSize: 32,
+        color: "red",
+        marginBottom: "-10px",
+        marginTop: "-6px",
+      }}
+    />
+  );
+
   return (
     <>
       <div className="project__content" id="projects">
@@ -27,7 +40,7 @@ function Projects() {
               href="https://www.youtube.com/watch?v=PdPoZLLXtUY"
               rel="noopener noreferrer"
             >
-              Tinder Clone 📺
+              Tinder Clone {youtubeIcon}
             </a>
           </p>
           <p className="project__content__bottom__each">
@@ -72,7 +85,7 @@ function Projects() {
               href="https://www.youtube.com/watch?v=BGfSsugl-_8"
               rel="noopener noreferrer"
             >
-              Hand-Sign Recognition 📺
+              Hand-Sign Recognition {youtubeIcon}
             </a>
           </p>
           <p className="project__content__bottom__each">
@@ -81,7 +94,7 @@ function Projects() {
               href="https://www.youtube.com/watch?v=RMwmN4j0s5s"
               rel="noopener noreferrer"
             >
-              Zomato App UI Clone 📺
+              Zomato App UI Clone {youtubeIcon}
             </a>
           </p>
           <p className="project__content__bottom__each">
@@ -117,7 +130,7 @@ function Projects() {
               href="https://www.youtube.com/watch?v=D-rokQn3WRw"
               rel="noopener noreferrer"
             >
-              Github Info Catcher 📺
+              Github Info Catcher {youtubeIcon}
             </a>
           </p>
           <p className="project__content__bottom__each">

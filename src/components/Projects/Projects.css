@@ -30,6 +30,11 @@
   color: black;
 }
 
+/* .project__content__bottom__each > .MuiSvgIcon-root {
+  text-color: red !important;
+  padding-bottom: 1px;
+} */
+
 .project__content__bottom__each:hover {
   transform: scale(1.08);
   background-color: #453c53;
