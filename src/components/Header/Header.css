@@ -16,21 +16,26 @@
   display: flex;
   align-items: center;
   padding-left: 1rem;
-  /* border: 1px solid green; */
 }
 
 .header__right {
   padding-right: 1rem;
   display: flex;
-
-  /* border: 1px solid green; */
 }
 
-/* @media screen and (max-width: 768px) {
-  .header__right {
-    visibility: hidden;
+@media screen and (max-width: 768px) {
+  .header__left {
+    display: none;
   }
-} */
+
+  .header__right {
+    margin: 0 auto;
+  }
+  /* 
+  .header__left {
+    margin: 0 auto;
+  } */
+}
 
 .nav__button__left {
   padding: 10px 10px;

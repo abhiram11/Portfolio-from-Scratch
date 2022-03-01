@@ -12,10 +12,6 @@ function Banner() {
     speed: 40,
   };
 
-  // const
-
-  // type(options, 1000, 'Hello world!');
-
   return (
     <div className="intro" id="banner">
       <div className="intro__title">

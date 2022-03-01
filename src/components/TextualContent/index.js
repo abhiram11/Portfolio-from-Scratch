@@ -11,7 +11,7 @@ function TextualContent() {
   return (
     <div className="textual__content" id="about">
       <div className="textual__content__top">
-        <div>
+        <div className="textual__content__top__left">
           <h2>Who Am I?</h2>
           <br />
           <p>
@@ -37,7 +37,7 @@ function TextualContent() {
         to any technical team.
       </p> */}
         </div>
-        <LazyLoadComponent>
+        <LazyLoadComponent className="textual__content__top__right">
           {/* <LazyLoadImage
             src={Photo}
             alt="Graphic Signature"
@@ -49,7 +49,7 @@ function TextualContent() {
             placeholderSrc={LazyPhoto}
           /> */}
           <video
-            // className="projects__backgroundVideo"
+            className="textual__content__video"
             autoPlay
             loop
             muted

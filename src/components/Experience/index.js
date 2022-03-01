@@ -73,15 +73,16 @@ function Experience() {
               Guwahati, IIIT Jabalpur, etc.).
             </p>
           </div>
-          <div className="experience__wrapper__image">
+          <div>
             <LazyLoadImage
               src={titan}
               alt="TTI-2.0"
               effect="blur"
-              style={{
-                height: "340px",
-                "object-fit": "contain",
-              }}
+              className="experience__wrapper__image"
+              // style={{
+              //   height: "340px",
+              //   "object-fit": "contain",
+              // }}
               placeholderSrc={Lazytitan}
             />
           </div>
@@ -102,15 +103,12 @@ function Experience() {
               with entrepreneurs all around the country.
             </p>
           </div>
-          <div className="experience__wrapper__image">
+          <div>
             <LazyLoadImage
               src={iimcip}
               alt="IIMCIP"
               effect="blur"
-              style={{
-                height: "340px",
-                "object-fit": "contain",
-              }}
+              className="experience__wrapper__image"
               placeholderSrc={Lazyiimcip}
             />
           </div>
@@ -134,15 +132,12 @@ function Experience() {
               event, so here's one from Titan event.
             </p>
           </div>
-          <div className="experience__wrapper__image">
+          <div>
             <LazyLoadImage
               src={qdic}
               alt="QDIC"
               effect="blur"
-              style={{
-                height: "340px",
-                "object-fit": "contain",
-              }}
+              className="experience__wrapper__image"
               placeholderSrc={Lazyqdic}
             />
           </div>

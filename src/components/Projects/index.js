@@ -173,6 +173,7 @@ function Projects() {
         </h3>
         <div className="projects__button">
           <a
+            //MAYBE ADD VIDEO DETAILS in CSS
             className="projects__link"
             href="https://github.com/abhiram11/Deployments-and-Certifications"
             target="_blank"
