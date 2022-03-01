@@ -131,9 +131,11 @@
   .projects__link {
     font-size: 12px;
     padding: 6px 6px;
+    margin-left: 2px;
   }
 
   .projects__link > .MuiSvgIcon-root {
     font-size: 20px;
+    margin-right: -6px;
   }
 }

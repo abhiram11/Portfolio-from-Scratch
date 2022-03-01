@@ -5,6 +5,7 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import YouTubeIcon from "@mui/icons-material/YouTube";
 import TwitterIcon from "@mui/icons-material/Twitter";
+import LaunchIcon from "@mui/icons-material/Launch";
 import "./Contact.css";
 
 function Contact() {
@@ -56,6 +57,18 @@ function Contact() {
         >
           <TwitterIcon sx={{ fontSize: 48 }} />
         </a>
+      </div>
+      <div className="blogs">
+        <h4>
+          Blogs: abhiramsatpute.hashnode.dev{" "}
+          <a
+            href="https://abhiramsatpute.hashnode.dev/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <LaunchIcon sx={{ marginBottom: "-6px", color: "whitesmoke" }} />
+          </a>
+        </h4>
       </div>
     </div>
     // <div className="contact__wrapper" id="contact">
