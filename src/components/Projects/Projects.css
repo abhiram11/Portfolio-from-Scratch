@@ -54,6 +54,7 @@
 }
 
 .projects > h3 {
+  margin: 0 auto;
   padding-right: 50px;
 }
 
@@ -89,6 +90,7 @@
 .projects__link {
   display: flex;
   padding: 10px 6px;
+  margin-right: 8px;
   text-decoration: none;
   color: black;
   border: 1px solid black;
@@ -121,7 +123,17 @@
   }
 
   .projects > h3 {
-    /* margin: 0 auto; */
-    font-size: 10px;
+    margin: 0 auto;
+    font-size: 12px;
+    padding-left: 18px;
+  }
+
+  .projects__link {
+    font-size: 12px;
+    padding: 6px 6px;
+  }
+
+  .projects__link > .MuiSvgIcon-root {
+    font-size: 20px;
   }
 }
