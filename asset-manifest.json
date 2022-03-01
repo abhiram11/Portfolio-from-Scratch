@@ -1,26 +1,27 @@
 {
   "files": {
-    "main.css": "/Portfolio-from-Scratch/static/css/main.4262625f.chunk.css",
-    "main.js": "/Portfolio-from-Scratch/static/js/main.06340a88.chunk.js",
-    "main.js.map": "/Portfolio-from-Scratch/static/js/main.06340a88.chunk.js.map",
+    "main.css": "/Portfolio-from-Scratch/static/css/main.8296c61d.chunk.css",
+    "main.js": "/Portfolio-from-Scratch/static/js/main.ffb97b5f.chunk.js",
+    "main.js.map": "/Portfolio-from-Scratch/static/js/main.ffb97b5f.chunk.js.map",
     "runtime-main.js": "/Portfolio-from-Scratch/static/js/runtime-main.dc30ea60.js",
     "runtime-main.js.map": "/Portfolio-from-Scratch/static/js/runtime-main.dc30ea60.js.map",
-    "static/js/2.4a2094fa.chunk.js": "/Portfolio-from-Scratch/static/js/2.4a2094fa.chunk.js",
-    "static/js/2.4a2094fa.chunk.js.map": "/Portfolio-from-Scratch/static/js/2.4a2094fa.chunk.js.map",
+    "static/js/2.0a78d80c.chunk.js": "/Portfolio-from-Scratch/static/js/2.0a78d80c.chunk.js",
+    "static/js/2.0a78d80c.chunk.js.map": "/Portfolio-from-Scratch/static/js/2.0a78d80c.chunk.js.map",
     "index.html": "/Portfolio-from-Scratch/index.html",
-    "static/css/main.4262625f.chunk.css.map": "/Portfolio-from-Scratch/static/css/main.4262625f.chunk.css.map",
-    "static/js/2.4a2094fa.chunk.js.LICENSE.txt": "/Portfolio-from-Scratch/static/js/2.4a2094fa.chunk.js.LICENSE.txt",
+    "static/css/main.8296c61d.chunk.css.map": "/Portfolio-from-Scratch/static/css/main.8296c61d.chunk.css.map",
+    "static/js/2.0a78d80c.chunk.js.LICENSE.txt": "/Portfolio-from-Scratch/static/js/2.0a78d80c.chunk.js.LICENSE.txt",
     "static/media/IIMCIP.7837c734.jpg": "/Portfolio-from-Scratch/static/media/IIMCIP.7837c734.jpg",
     "static/media/Intro-Background-3-1.2700ecf2.m4v": "/Portfolio-from-Scratch/static/media/Intro-Background-3-1.2700ecf2.m4v",
     "static/media/Myname-3.c13926bb.m4v": "/Portfolio-from-Scratch/static/media/Myname-3.c13926bb.m4v",
     "static/media/Projects3-4.8429ab03.m4v": "/Portfolio-from-Scratch/static/media/Projects3-4.8429ab03.m4v",
     "static/media/Titan.994d72e8.jpg": "/Portfolio-from-Scratch/static/media/Titan.994d72e8.jpg",
-    "static/media/Titan4.9f8d48a1.jpg": "/Portfolio-from-Scratch/static/media/Titan4.9f8d48a1.jpg"
+    "static/media/Titan4.9f8d48a1.jpg": "/Portfolio-from-Scratch/static/media/Titan4.9f8d48a1.jpg",
+    "static/media/brand-full.4c3c2081.png": "/Portfolio-from-Scratch/static/media/brand-full.4c3c2081.png"
   },
   "entrypoints": [
     "static/js/runtime-main.dc30ea60.js",
-    "static/js/2.4a2094fa.chunk.js",
-    "static/css/main.4262625f.chunk.css",
-    "static/js/main.06340a88.chunk.js"
+    "static/js/2.0a78d80c.chunk.js",
+    "static/css/main.8296c61d.chunk.css",
+    "static/js/main.ffb97b5f.chunk.js"
   ]
 }
