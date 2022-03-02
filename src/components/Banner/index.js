@@ -1,6 +1,7 @@
 import React from "react";
 import Typical from "react-typical";
 // import Video from "../../media/intro-background-3.mp4";
+import ProfilePhoto from "../../media/about-cropped.png";
 import { LazyLoadComponent } from "react-lazy-load-image-component";
 
 import Video from "../../media/Intro-Background-3-1.m4v";
@@ -40,7 +41,8 @@ function Banner() {
             {/* </Suspense> */}
           </div>
         </LazyLoadComponent>
-        <h1>Hi, I'm Abhiram Satpute</h1>
+        <img src={ProfilePhoto} className="intro__profilePhoto" alt="Profile" />
+        <h1>Hi! I'm Abhiram Satpute</h1>
         <Typical
           className="typed-text-bigscreen"
           loop={Infinity}

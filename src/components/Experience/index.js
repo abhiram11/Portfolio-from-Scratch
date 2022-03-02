@@ -121,15 +121,13 @@ function Experience() {
               Sept 2018 - March 2019
             </p>
             <p>
-              This was one of the toughest startup programme to get selected.
-              Our startup, mBreath, got ranked in Top 15 Nationwide Startups in
-              India and we represented the company at The Ritz Carlton,
-              Bangalore. After the selection in the final round, I learned a bit
-              of Android Kernel programming, sensors interfacing with Qualcomm's
-              Snapdragon processors, Java Native Interface (C and Java coding
-              together), while researching and developing the AI models
-              simultaneously. I could not take during the super busy two-day
-              event, so here's one from Titan event.
+              This was one of the toughest startup programme to get selected
+              for. Our startup, mBreath, got ranked in Top 15 Nationwide
+              Startups in India and we represented the company at The Ritz
+              Carlton, Bangalore to Senior Management of Qualcomm, investors,
+              and other entrepreneurs. I could not take any professional photo
+              during the super busy two-day event, so here's one from Titan TTI
+              2.0.
             </p>
           </div>
           {/* <div> */}
