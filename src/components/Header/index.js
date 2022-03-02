@@ -15,7 +15,7 @@ function Header() {
           duration={500}
           spy={true}
           exact="true"
-          offset={-80}
+          // offset={-46}
         >
           <p className="nav__button">
             Home
@@ -30,7 +30,7 @@ function Header() {
           duration={500}
           spy={true}
           exact="true"
-          offset={-80}
+          offset={-46}
         >
           <p className="nav__button">About</p>
         </LinkS>
@@ -40,7 +40,7 @@ function Header() {
           duration={500}
           spy={true}
           exact="true"
-          offset={-80}
+          offset={-46}
         >
           <p className="nav__button">Experience</p>
         </LinkS>
@@ -50,7 +50,7 @@ function Header() {
           duration={500}
           spy={true}
           exact="true"
-          offset={-80}
+          offset={-46}
         >
           <p className="nav__button">Projects</p>
         </LinkS>
@@ -60,7 +60,7 @@ function Header() {
           duration={500}
           spy={true}
           exact="true"
-          offset={-80}
+          offset={-46}
         >
           <p className="nav__button">Contact</p>
         </LinkS>
