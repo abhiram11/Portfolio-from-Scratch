@@ -118,7 +118,7 @@ function Experience() {
           <div className="experience__wrapper__lower">
             <h4>Qualcomm Design in India Challenge, Bangalore</h4>
             <p className="experience__wrapper__duration">
-              Sept 2019 - March 2019
+              Sept 2018 - March 2019
             </p>
             <p>
               This was one of the toughest startup programme to get selected.
