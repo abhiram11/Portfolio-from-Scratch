@@ -13,6 +13,14 @@
   color: whitesmoke;
 }
 
+.typed-text-bigscreen {
+  display: block;
+}
+
+.typed-text-smallscreen {
+  display: none;
+}
+
 .intro__background {
   position: absolute;
   top: 0;
@@ -37,8 +45,12 @@
   .intro__title > h1 {
     font-size: 16px;
   }
-  /* 
-  .typed_text {
-    wrapper: h5;
-  } */
+
+  .typed-text-bigscreen {
+    display: none;
+  }
+
+  .typed-text-smallscreen {
+    display: block;
+  }
 }
