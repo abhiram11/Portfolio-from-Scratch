@@ -73,19 +73,19 @@ function Experience() {
               Guwahati, IIIT Jabalpur, etc.).
             </p>
           </div>
-          <div>
-            <LazyLoadImage
-              src={titan}
-              alt="TTI-2.0"
-              effect="blur"
-              className="experience__wrapper__image"
-              // style={{
-              //   height: "340px",
-              //   "object-fit": "contain",
-              // }}
-              placeholderSrc={Lazytitan}
-            />
-          </div>
+          {/* <div> */}
+          <LazyLoadImage
+            src={titan}
+            alt="TTI-2.0"
+            effect="blur"
+            className="experience__wrapper__image"
+            // style={{
+            //   height: "340px",
+            //   "object-fit": "contain",
+            // }}
+            placeholderSrc={Lazytitan}
+          />
+          {/* </div> */}
         </div>
         <div className="experience__wrapper__b">
           <div className="experience__wrapper__lower">
@@ -103,15 +103,15 @@ function Experience() {
               with entrepreneurs all around the country.
             </p>
           </div>
-          <div>
-            <LazyLoadImage
-              src={iimcip}
-              alt="IIMCIP"
-              effect="blur"
-              className="experience__wrapper__image"
-              placeholderSrc={Lazyiimcip}
-            />
-          </div>
+          {/* <div> */}
+          <LazyLoadImage
+            src={iimcip}
+            alt="IIMCIP"
+            effect="blur"
+            className="experience__wrapper__image"
+            placeholderSrc={Lazyiimcip}
+          />
+          {/* </div> */}
         </div>
         <div className="experience__wrapper__a">
           {/* just change their flex start etc stuff.... */}
@@ -132,15 +132,15 @@ function Experience() {
               event, so here's one from Titan event.
             </p>
           </div>
-          <div>
-            <LazyLoadImage
-              src={qdic}
-              alt="QDIC"
-              effect="blur"
-              className="experience__wrapper__image"
-              placeholderSrc={Lazyqdic}
-            />
-          </div>
+          {/* <div> */}
+          <LazyLoadImage
+            src={qdic}
+            alt="QDIC"
+            effect="blur"
+            className="experience__wrapper__image"
+            placeholderSrc={Lazyqdic}
+          />
+          {/* </div> */}
         </div>
       </div>
     </div>

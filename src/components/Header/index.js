@@ -17,8 +17,9 @@ function Header() {
           exact="true"
           offset={-80}
         >
-          <p className="nav__button__left">
-            P.S.: Desktop only, not optimized for Mobile yet
+          <p className="nav__button">
+            Home
+            {/* P.S.: Desktop only, not optimized for Mobile yet */}
           </p>
         </LinkS>
       </div>
