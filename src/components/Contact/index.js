@@ -22,14 +22,14 @@ function Contact() {
       </div>
       <div className="contact">
         <a href="https://github.com/abhiram11" target="_blank" rel="noreferrer">
-          <GitHubIcon sx={{ fontSize: 48 }} />
+          <GitHubIcon sx={{ fontSize: 36 }} />
         </a>
         <a
           href="https://www.linkedin.com/in/abhiram-satpute/"
           target="_blank"
           rel="noreferrer"
         >
-          <LinkedInIcon sx={{ fontSize: 48 }} />
+          <LinkedInIcon sx={{ fontSize: 36 }} />
         </a>
         <a
           href="https://stackoverflow.com/users/8185479/abhiram-satput%c3%a9"
@@ -49,14 +49,14 @@ function Contact() {
           target="_blank"
           rel="noreferrer"
         >
-          <YouTubeIcon sx={{ fontSize: 48 }} />
+          <YouTubeIcon sx={{ fontSize: 36 }} />
         </a>
         <a
           href="https://twitter.com/abhiram_satpute"
           target="_blank"
           rel="noreferrer"
         >
-          <TwitterIcon sx={{ fontSize: 48 }} />
+          <TwitterIcon sx={{ fontSize: 36 }} />
         </a>
       </div>
       <div className="blogs">
