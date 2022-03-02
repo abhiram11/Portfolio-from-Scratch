@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/Portfolio-from-Scratch/static/css/main.596dfe98.chunk.css",
-    "main.js": "/Portfolio-from-Scratch/static/js/main.b6da3dfe.chunk.js",
-    "main.js.map": "/Portfolio-from-Scratch/static/js/main.b6da3dfe.chunk.js.map",
+    "main.css": "/Portfolio-from-Scratch/static/css/main.829dcd6e.chunk.css",
+    "main.js": "/Portfolio-from-Scratch/static/js/main.7440ef4e.chunk.js",
+    "main.js.map": "/Portfolio-from-Scratch/static/js/main.7440ef4e.chunk.js.map",
     "runtime-main.js": "/Portfolio-from-Scratch/static/js/runtime-main.dc30ea60.js",
     "runtime-main.js.map": "/Portfolio-from-Scratch/static/js/runtime-main.dc30ea60.js.map",
     "static/js/2.75e44835.chunk.js": "/Portfolio-from-Scratch/static/js/2.75e44835.chunk.js",
     "static/js/2.75e44835.chunk.js.map": "/Portfolio-from-Scratch/static/js/2.75e44835.chunk.js.map",
     "index.html": "/Portfolio-from-Scratch/index.html",
-    "static/css/main.596dfe98.chunk.css.map": "/Portfolio-from-Scratch/static/css/main.596dfe98.chunk.css.map",
+    "static/css/main.829dcd6e.chunk.css.map": "/Portfolio-from-Scratch/static/css/main.829dcd6e.chunk.css.map",
     "static/js/2.75e44835.chunk.js.LICENSE.txt": "/Portfolio-from-Scratch/static/js/2.75e44835.chunk.js.LICENSE.txt",
     "static/media/IIMCIP.7837c734.jpg": "/Portfolio-from-Scratch/static/media/IIMCIP.7837c734.jpg",
     "static/media/Intro-Background-3-1.2700ecf2.m4v": "/Portfolio-from-Scratch/static/media/Intro-Background-3-1.2700ecf2.m4v",
@@ -16,12 +16,12 @@
     "static/media/Projects3-4.8429ab03.m4v": "/Portfolio-from-Scratch/static/media/Projects3-4.8429ab03.m4v",
     "static/media/Titan.57bfe1aa.jpg": "/Portfolio-from-Scratch/static/media/Titan.57bfe1aa.jpg",
     "static/media/Titan4.9f8d48a1.jpg": "/Portfolio-from-Scratch/static/media/Titan4.9f8d48a1.jpg",
-    "static/media/brand-full.4c3c2081.png": "/Portfolio-from-Scratch/static/media/brand-full.4c3c2081.png"
+    "static/media/about-cropped.45b4dd24.png": "/Portfolio-from-Scratch/static/media/about-cropped.45b4dd24.png"
   },
   "entrypoints": [
     "static/js/runtime-main.dc30ea60.js",
     "static/js/2.75e44835.chunk.js",
-    "static/css/main.596dfe98.chunk.css",
-    "static/js/main.b6da3dfe.chunk.js"
+    "static/css/main.829dcd6e.chunk.css",
+    "static/js/main.7440ef4e.chunk.js"
   ]
 }
