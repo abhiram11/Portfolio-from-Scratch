@@ -50,7 +50,7 @@
 }
 
 .skills__cover__h3 {
-  margin: auto 0;
+  padding: 30% 0;
   color: "#26212e";
 }
 
@@ -84,6 +84,7 @@
 
   .skills__cover__h3 {
     font-size: 12px;
+    padding: 65% 0;
   }
 
   .skills__cover__h3 > span {

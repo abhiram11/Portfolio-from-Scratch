@@ -42,9 +42,23 @@ function Banner() {
         </LazyLoadComponent>
         <h1>Hi, I'm Abhiram Satpute</h1>
         <Typical
-          className="typed-text"
+          className="typed-text-bigscreen"
           loop={Infinity}
           wrapper="h4"
+          steps={[
+            "Experienced Data Scientist 🚀",
+            500,
+            options,
+            "Budding Full Stack Developer 💻",
+            500,
+            "Thanks for staying > 10 seconds here 😁",
+            500,
+          ]}
+        />
+        <Typical
+          className="typed-text-smallscreen"
+          loop={Infinity}
+          wrapper="h6"
           steps={[
             "Experienced Data Scientist 🚀",
             500,
