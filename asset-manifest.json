@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/Portfolio-from-Scratch/static/css/main.25a9d50c.chunk.css",
-    "main.js": "/Portfolio-from-Scratch/static/js/main.bbac070d.chunk.js",
-    "main.js.map": "/Portfolio-from-Scratch/static/js/main.bbac070d.chunk.js.map",
+    "main.css": "/Portfolio-from-Scratch/static/css/main.596dfe98.chunk.css",
+    "main.js": "/Portfolio-from-Scratch/static/js/main.b6da3dfe.chunk.js",
+    "main.js.map": "/Portfolio-from-Scratch/static/js/main.b6da3dfe.chunk.js.map",
     "runtime-main.js": "/Portfolio-from-Scratch/static/js/runtime-main.dc30ea60.js",
     "runtime-main.js.map": "/Portfolio-from-Scratch/static/js/runtime-main.dc30ea60.js.map",
     "static/js/2.75e44835.chunk.js": "/Portfolio-from-Scratch/static/js/2.75e44835.chunk.js",
     "static/js/2.75e44835.chunk.js.map": "/Portfolio-from-Scratch/static/js/2.75e44835.chunk.js.map",
     "index.html": "/Portfolio-from-Scratch/index.html",
-    "static/css/main.25a9d50c.chunk.css.map": "/Portfolio-from-Scratch/static/css/main.25a9d50c.chunk.css.map",
+    "static/css/main.596dfe98.chunk.css.map": "/Portfolio-from-Scratch/static/css/main.596dfe98.chunk.css.map",
     "static/js/2.75e44835.chunk.js.LICENSE.txt": "/Portfolio-from-Scratch/static/js/2.75e44835.chunk.js.LICENSE.txt",
     "static/media/IIMCIP.7837c734.jpg": "/Portfolio-from-Scratch/static/media/IIMCIP.7837c734.jpg",
     "static/media/Intro-Background-3-1.2700ecf2.m4v": "/Portfolio-from-Scratch/static/media/Intro-Background-3-1.2700ecf2.m4v",
@@ -21,7 +21,7 @@
   "entrypoints": [
     "static/js/runtime-main.dc30ea60.js",
     "static/js/2.75e44835.chunk.js",
-    "static/css/main.25a9d50c.chunk.css",
-    "static/js/main.bbac070d.chunk.js"
+    "static/css/main.596dfe98.chunk.css",
+    "static/js/main.b6da3dfe.chunk.js"
   ]
 }
