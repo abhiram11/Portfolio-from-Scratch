@@ -21,6 +21,12 @@
   display: none;
 }
 
+.intro__profilePhoto {
+  height: 240px;
+  object-fit: contain;
+  padding-bottom: 20px;
+}
+
 .intro__background {
   position: absolute;
   top: 0;
@@ -52,5 +58,9 @@
 
   .typed-text-smallscreen {
     display: block;
+  }
+
+  .intro__profilePhoto {
+    height: 140px;
   }
 }
