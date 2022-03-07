@@ -1,10 +1,10 @@
 import React from "react";
 import "./Experience.css";
-import qdic from "../../media/Titan4.jpg";
+import qdic from "../../media/Titan4.avif";
 import Lazyqdic from "../../media/LazyTitan4.jpg";
-import iimcip from "../../media/IIMCIP.jpg";
+import iimcip from "../../media/IIMCIP.avif";
 import Lazyiimcip from "../../media/LazyIIMCIP.jpg";
-import titan from "../../media/Titan.jpg";
+import titan from "../../media/Titan.avif";
 import Lazytitan from "../../media/LazyTitan.jpg";
 // import prize from "../../media/img_bg_1.jpg";
 
