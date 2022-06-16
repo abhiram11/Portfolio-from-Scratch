@@ -52,7 +52,8 @@
 .contact__left__input {
   width: 100%;
   padding: 0.5rem;
-  border: 2px solid #312b3b;
+  margin: 0.2rem 0;
+  border: 2px solid #a095b2;
   border-radius: 2px;
 }
 
@@ -68,6 +69,13 @@
   padding: 0.5rem;
   border: 2px solid #312b3b;
   border-radius: 2px;
+}
+
+.contact__captcha {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
 }
 
 .contact__submit__button {
@@ -86,15 +94,11 @@
   position: relative;
   text-align: center;
   text-decoration: none;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  vertical-align: middle;
-  white-space: nowrap;
+  transition: 0.3s;
 }
 
 .contact__submit__button:hover {
-  background-color: #2c974b;
+  background-color: #40c967;
 }
 
 .contact__submit__button:disabled {
