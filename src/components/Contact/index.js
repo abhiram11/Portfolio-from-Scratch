@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 // import HashNodeImage from "../../media/brand-full.png";
 import GitHubIcon from "@mui/icons-material/GitHub";
@@ -10,15 +10,34 @@ import "./Contact.css";
 import { useForm } from "react-hook-form";
 import emailjs from "@emailjs/browser"; //variables: from_name, email, phone, message
 import toast, { Toaster } from "react-hot-toast";
-
+import ReCAPTCHA from "react-google-recaptcha";
 function Contact() {
   const form = useRef();
+  const [captchaToken, setCaptchaToken] = useState(null);
+  const [verified, setVerified] = useState(false);
+
+  // useEffect(() => {
+  //   setTimeout(function () {
+  //     window.location.reload();
+  //   }, 1000);
+  // }, [ReCAPTCHA]);
+
   const {
     register,
     handleSubmit,
     reset,
     formState: { errors },
   } = useForm();
+
+  useEffect(() => {
+    captchaToken ? setVerified(true) : setVerified(false);
+  }, [captchaToken]);
+
+  const handleOnChange = (value) => {
+    console.log("Verified value:", value);
+    setCaptchaToken(value);
+    setVerified(true);
+  };
 
   const sendEmail = () => {
     // e.preventDefault();
@@ -54,7 +73,7 @@ function Contact() {
     <div className="contact__wrapper" id="contact">
       <Toaster position="bottom-center" />
       <div className="contact__header">
-        <h3>Get in touch!</h3>
+        <h3>It doesn't have to end here, let's connect!</h3>
       </div>
       <form ref={form} id="contact-form" onSubmit={handleSubmit(sendEmail)}>
         <div className="contact__form__body">
@@ -127,7 +146,17 @@ function Contact() {
             )} */}
           </div>
         </div>
-        <button type="submit" className="contact__submit__button">
+        <div className="contact__captcha">
+          <ReCAPTCHA
+            sitekey={process.env.REACT_APP_RECAPTCHA_KEY}
+            onChange={handleOnChange}
+          />
+        </div>
+        <button
+          type="submit"
+          className="contact__submit__button"
+          disabled={!verified}
+        >
           Send
         </button>
       </form>
@@ -187,10 +216,3 @@ function Contact() {
 }
 
 export default Contact;
-//       {/* <img
-//           src="https://stackoverflow.com/users/flair/8185479.png?theme=dark"
-//           width="208"
-//           height="58"
-//           alt="profile for Abhiram Satput&#233; at Stack Overflow, Q&amp;A for professional and enthusiast programmers"
-//           title="More than 80K+ Profiles Reached as well!"
-//         /> */}
