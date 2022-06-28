@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Header.css";
 import { Link as LinkS } from "react-scroll";
 // import { Link } from "react-router-dom";
@@ -6,8 +6,23 @@ import { Link as LinkS } from "react-scroll";
 // navigation not working as expected....some errors happening and takes action after scrolling a bit below
 
 function Header() {
+  const [show, handleShow] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 200) {
+        handleShow(true);
+      } else handleShow(false);
+    });
+    return () => {
+      window.removeEventListener("scroll"); //remove listener redundancy, not called 20 times, etc...
+    };
+  }, []);
+
+  // className={`nav ${show && "nav_black"}`
+
   return (
-    <div className="header">
+    <div className={`header ${show && "header__bg"}`}>
       <div className="header__left">
         <LinkS
           to="banner"
@@ -23,6 +38,7 @@ function Header() {
           </p>
         </LinkS>
       </div>
+      <div className="header__center" />
       <div className="header__right">
         <LinkS
           to="about"
@@ -30,7 +46,7 @@ function Header() {
           duration={500}
           spy={true}
           exact="true"
-          offset={-46}
+          offset={-100}
         >
           <p className="nav__button">About</p>
         </LinkS>
@@ -40,7 +56,7 @@ function Header() {
           duration={500}
           spy={true}
           exact="true"
-          offset={-46}
+          offset={-100}
         >
           <p className="nav__button">Experience</p>
         </LinkS>
@@ -50,7 +66,7 @@ function Header() {
           duration={500}
           spy={true}
           exact="true"
-          offset={-46}
+          offset={-100}
         >
           <p className="nav__button">Projects</p>
         </LinkS>
@@ -60,7 +76,7 @@ function Header() {
           duration={500}
           spy={true}
           exact="true"
-          offset={-46}
+          offset={-100}
         >
           <p className="nav__button">Contact</p>
         </LinkS>
@@ -70,3 +86,33 @@ function Header() {
 }
 
 export default Header;
+
+// function Nav() {
+//   const [show, handleShow] = useState([]);
+
+//   useEffect(() => {
+//     window.addEventListener("scroll", () => {
+//       if (window.scrollY > 100) {
+//         handleShow(true);
+//       } else handleShow(false);
+//     });
+//     return () => {
+//       window.removeEventListener("scroll"); //remove listener redundancy, not called 20 times, etc...
+//     };
+//   }, []);
+
+//   return (
+//     <div className={`nav ${show && "nav_black"}`}>
+//       <img
+//         className="nav_logo"
+//         src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/799px-Netflix_2015_logo.svg.png"
+//         alt="Netflix Logo"
+//       />
+
+//       <img
+//         className="nav_avatar"
+//         src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Netflix-avatar.png"
+//         alt="Avatar"
+//       ></img>
+//     </div>
+//   );

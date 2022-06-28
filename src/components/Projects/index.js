@@ -1,163 +1,114 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Projects.css";
+// import Video from "../../media/projects3.mp4";
 import Video from "../../media/Projects3-4(no audio 2).m4v";
 // import LazyProject from "../../media/LazyProject3.JPG";
 // import ArrowForwardIcon from "@material-ui/icons/ArrowForward";
-import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
-import YouTubeIcon from "@mui/icons-material/YouTube";
 import { LazyLoadComponent } from "react-lazy-load-image-component";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import { MdChevronLeft, MdChevronRight } from "react-icons/md";
+import { BsArrowRight } from "react-icons/bs";
 
 import "./Projects.css";
+import ProjectCard from "../ProjectCard";
+import { projectData } from "./projectsData";
+import { useState } from "react";
 
 function Projects() {
-  const youtubeIcon = (
-    <YouTubeIcon
-      sx={{
-        fontSize: 28,
-        color: "red",
-        marginBottom: "-8px",
-        marginTop: "-6px",
-      }}
-    />
-  );
+  const [hover, setHover] = useState(false);
+  const handleMouseIn = () => {
+    setHover(true);
+  };
+
+  const handleMouseOut = () => {
+    setHover(false);
+  };
+
+  const { ref, inView } = useInView({
+    threshold: 0.2,
+  });
+  const animation = useAnimation();
+
+  useEffect(() => {
+    // console.log(inView);
+    if (inView) {
+      animation.start({
+        y: 0,
+        opacity: 1,
+        transition: {
+          type: "spring",
+          duration: 1,
+          bounce: 0.3,
+        },
+      });
+    } else {
+      animation.start({
+        y: 50,
+        opacity: 0,
+        transition: {
+          type: "spring",
+          duration: 1,
+          bounce: 0.3,
+        },
+      });
+    }
+  }, [inView, animation]);
+
+  const slideLeft = () => {
+    var slider = document.getElementById("project__slider");
+    slider.scrollLeft = slider.scrollLeft - 640;
+  };
+
+  const slideRight = () => {
+    var slider = document.getElementById("project__slider");
+    slider.scrollLeft = slider.scrollLeft + 640;
+  };
 
   return (
     <>
-      <div className="project__content" id="projects">
+      <motion.div
+        className="project__content"
+        id="projects"
+        ref={ref}
+        animate={animation}
+      >
         <div className="project__content__top">
           <h2>Projects</h2>
           <p>
-            Ranging from fully-fledged Web and Mobile Apps to Demo or
-            Fragmentary Applications, I have deployed a wide range of projects
-            implementing numerous technologies and libraries to showcase my
-            skills. Have a look!
+            From fully-fledged Apps to Demos, I have developed a wide range of
+            projects. Have a look!
           </p>
         </div>
-        <div className="project__content__bottom">
-          <p className="project__content__bottom__each">
-            <a
-              target="_blank"
-              href="https://www.youtube.com/watch?v=PdPoZLLXtUY"
-              rel="noopener noreferrer"
-            >
-              Tinder Clone {youtubeIcon}
-            </a>
-          </p>
-          <p className="project__content__bottom__each">
-            <a
-              target="_blank"
-              href="https://netflix-clone-77572.web.app/"
-              rel="noopener noreferrer"
-            >
-              Netflix Clone
-            </a>
-          </p>
-          <p className="project__content__bottom__each">
-            <a
-              target="_blank"
-              href="https://spotify-clone-e93b9.web.app/"
-              rel="noopener noreferrer"
-            >
-              Spotify Clone
-            </a>
-          </p>
-          <p className="project__content__bottom__each">
-            <a
-              target="_blank"
-              href="https://slack-clone-00001.firebaseapp.com/"
-              rel="noopener noreferrer"
-            >
-              Slack Clone
-            </a>
-          </p>
-          <p className="project__content__bottom__each">
-            <a
-              target="_blank"
-              href="https://myntra-clone-001abhi.netlify.app/"
-              rel="noopener noreferrer"
-            >
-              Myntra Clone
-            </a>
-          </p>
-          <p className="project__content__bottom__each">
-            <a
-              target="_blank"
-              href="https://www.youtube.com/watch?v=BGfSsugl-_8"
-              rel="noopener noreferrer"
-            >
-              Hand-Sign Recognition {youtubeIcon}
-            </a>
-          </p>
-          <p className="project__content__bottom__each">
-            <a
-              target="_blank"
-              href="https://www.youtube.com/watch?v=RMwmN4j0s5s"
-              rel="noopener noreferrer"
-            >
-              Zomato App UI Clone {youtubeIcon}
-            </a>
-          </p>
-          <p className="project__content__bottom__each">
-            <a
-              target="_blank"
-              href="https://tesla-clone-001.netlify.app/"
-              rel="noopener noreferrer"
-            >
-              Tesla Clone
-            </a>
-          </p>
-          <p className="project__content__bottom__each">
-            <a
-              target="_blank"
-              href="https://banking-clone-001abhi.netlify.app/"
-              rel="noopener noreferrer"
-            >
-              Banking Site
-            </a>
-          </p>
-          <p className="project__content__bottom__each">
-            <a
-              target="_blank"
-              href="https://yt-clone-abhiram.web.app/"
-              rel="noopener noreferrer"
-            >
-              Youtube Clone
-            </a>
-          </p>
-          <p className="project__content__bottom__each">
-            <a
-              target="_blank"
-              href="https://www.youtube.com/watch?v=D-rokQn3WRw"
-              rel="noopener noreferrer"
-            >
-              Github Info Catcher {youtubeIcon}
-            </a>
-          </p>
-          <p className="project__content__bottom__each">
-            <a
-              target="_blank"
-              href="https://github.com/abhiram11/Deployments-and-Certifications"
-              rel="noopener noreferrer"
-            >
-              AND Many More!
-            </a>
-          </p>
+        <div className="project__content__cards">
+          <MdChevronLeft
+            size={56}
+            onClick={slideLeft}
+            className="slider__icon"
+          />
+          <div className="cards__slider" id="project__slider">
+            {projectData.map((project) => (
+              <ProjectCard
+                title={project.title}
+                image={project.image}
+                subtitle={project.subtitle}
+                demo={project?.demo ? project?.demo : null}
+                github={project?.github ? project?.github : null}
+                youtube={project?.youtube ? project?.youtube : null}
+                thumbnail={project?.thumbnail ? project?.thumbnail : null}
+                project
+              />
+            ))}
+          </div>
+          <MdChevronRight
+            size={56}
+            onClick={slideRight}
+            className="slider__icon"
+          />
         </div>
-      </div>
+      </motion.div>
       <div className="projects">
         <div className="projects__background">
-          {/* <Suspense
-            fallback={
-              <img
-                src={LazyProject}
-                alt="Project Lazy"
-                style={{
-                  "object-fit": "contain",
-                  width: "100%",
-                }}
-              />
-            }
-          > */}
           <LazyLoadComponent>
             <video
               className="projects__backgroundVideo"
@@ -168,32 +119,38 @@ function Projects() {
               type="video/mp4"
             />
           </LazyLoadComponent>
-
-          {/* </Suspense> */}
         </div>
         <h3>
           You can also check out my{" "}
           <span
-            style={{
-              color: "black",
-              "padding-left": "15px",
-              "padding-right": "20px",
-            }}
+            className="projects__span"
+            // style={{
+            //   color: "black",
+            //   "padding-left": "20px",
+            //   "padding-right": "20px",
+            // }}
           >
             Projects
           </span>{" "}
           on my GitHub Profile!
         </h3>
-        <div className="projects__button">
+        <div
+          className="projects__button"
+          onMouseOver={handleMouseIn}
+          onMouseOut={handleMouseOut}
+        >
           <a
-            //MAYBE ADD VIDEO DETAILS in CSS
             className="projects__link"
             href="https://github.com/abhiram11/Deployments-and-Certifications"
             target="_blank"
             rel="noreferrer"
           >
             <p>Let's Go</p>
-            <ArrowForwardIcon />
+            {hover ? (
+              <BsArrowRight className="projects__linkIcon" />
+            ) : (
+              <MdChevronRight className="projects__linkIcon" />
+            )}
           </a>
         </div>
       </div>
