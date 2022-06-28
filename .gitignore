@@ -19,6 +19,9 @@
 .env.test.local
 .env.production.local
 
+# no idea what this is
+newrelic_agent.log
+
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*

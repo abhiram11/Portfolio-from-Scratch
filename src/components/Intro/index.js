@@ -10,14 +10,6 @@ import {
   useSpringRef,
 } from "@react-spring/web";
 
-//
-//
-//
-// Change min height of wrapper, CHANGE QDIC PIC TO TTI2 AWARD
-//
-//
-//
-
 function Intro() {
   const [open, setOpen] = useState(false);
 
@@ -56,23 +48,13 @@ function Intro() {
           onClick={() => setOpen((open) => !open)}
         >
           {open ? null : (
-            <div
-              style={{ width: "100%", position: "absolute", margin: "auto" }}
-            >
-              <h3
-                className="skills__cover__h3"
-                // style={{
-                //   // "padding-top": "32px",
-                //   color: "#26212e",
-                // }}
-              >
-                My Skills <br />
-                <span
-
-                // style={{ fontSize: "14px" }}
-                >
-                  (Click Me!)
-                </span>
+            <div className="skills__cover">
+              <h3 className="skills__cover__h3">
+                What
+                <br />
+                makes me
+                <br />
+                Unique
               </h3>
             </div>
           )}
@@ -82,7 +64,14 @@ function Intro() {
               className="item"
               style={{ ...style, background: item.css }}
             >
-              <h4>{item?.title}</h4>
+              {item.title && <h4>{item?.title}</h4>}
+              {item.imgUrl && (
+                <img
+                  src={item.imgUrl}
+                  alt="tech icon"
+                  className="item__image"
+                />
+              )}
             </animated.div>
           ))}
         </animated.div>

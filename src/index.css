@@ -1,6 +1,20 @@
 * {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
+  max-width: 1440px;
   box-sizing: border-box;
   font-family: "Encode Sans Expanded", "sans-serif";
 }
+
+/* h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #b8ecf5;
+}
+
+p {
+  color: #caf0f8;
+} */

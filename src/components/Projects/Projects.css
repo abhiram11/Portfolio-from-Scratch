@@ -1,10 +1,40 @@
 .project__content {
-  padding: 1rem;
+  padding: 2rem 0.5rem;
   border-top: 1px solid #e6e6e6;
 }
 
 .project__content__top > p {
   padding: 1rem;
+}
+
+.project__content__cards {
+  position: relative;
+  display: flex;
+  align-items: center;
+  /* justify-content: flex-start; */
+}
+
+.cards__slider {
+  width: 100%;
+  height: 100%;
+  white-space: nowrap;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+}
+
+.slider__icon {
+  opacity: 0.5;
+  cursor: pointer;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.slider__icon:hover {
+  opacity: 1;
+}
+
+.cards__slider::-webkit-scrollbar {
+  display: none;
 }
 
 .project__content__bottom {
@@ -48,12 +78,17 @@
 .projects {
   position: relative;
   background: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   color: whitesmoke;
   padding-top: 100px;
   padding-bottom: 70px;
 }
 
 .projects > h3 {
+  width: 100%;
   margin: 0 auto;
   padding-right: 50px;
 }
@@ -84,6 +119,7 @@
   /* align-items: center; */
   justify-content: center;
   margin-top: 20px;
+  cursor: pointer;
   /* border: 1px solid red; */
 }
 
@@ -99,13 +135,19 @@
 }
 
 /* MuiSvgIcon-root */
-.projects__link > .MuiSvgIcon-root {
-  padding-bottom: 4px;
+.projects__linkIcon {
+  font-size: 24px;
+  padding-bottom: 2px;
 }
 
 .projects__link:hover {
   color: white;
   background-color: black;
+}
+
+.projects__span {
+  color: black;
+  padding: 0 20px;
 }
 
 @media screen and (max-width: 768px) {
@@ -130,17 +172,44 @@
   .projects > h3 {
     margin: 0 auto;
     font-size: 10px;
-    padding-left: 25px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: -12px;
   }
 
+  .projects__span {
+    color: black;
+    padding: 0 10px;
+  }
   .projects__link {
     font-size: 12px;
     padding: 6px 6px;
     margin-left: 2px;
   }
 
-  .projects__link > .MuiSvgIcon-root {
-    font-size: 20px;
-    margin-right: -6px;
+  .projects__linkIcon {
+    font-size: 16px;
+  }
+  .slider__icon {
+    height: 24px;
+    width: 24px;
+  }
+
+  .projects__link {
+    display: flex;
+    padding: 6px 6px;
+    margin-right: 2px;
+  }
+
+  .projects__link > p {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .slider__icon {
+    display: none;
+    /* height: 24px;
+    width: 24px; */
   }
 }

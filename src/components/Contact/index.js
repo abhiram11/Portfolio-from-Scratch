@@ -1,20 +1,51 @@
 import React, { useEffect, useRef, useState } from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
-// import HashNodeImage from "../../media/brand-full.png";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import YouTubeIcon from "@mui/icons-material/YouTube";
 import TwitterIcon from "@mui/icons-material/Twitter";
-import LaunchIcon from "@mui/icons-material/Launch";
 import "./Contact.css";
 import { useForm } from "react-hook-form";
 import emailjs from "@emailjs/browser"; //variables: from_name, email, phone, message
 import toast, { Toaster } from "react-hot-toast";
 import ReCAPTCHA from "react-google-recaptcha";
+import { useInView } from "react-intersection-observer";
+import { motion, useAnimation } from "framer-motion";
+
 function Contact() {
   const form = useRef();
   const [captchaToken, setCaptchaToken] = useState(null);
   const [verified, setVerified] = useState(false);
+
+  const { ref, inView } = useInView({
+    threshold: 0.2,
+  });
+  const animation = useAnimation();
+
+  useEffect(() => {
+    // console.log(inView);
+    if (inView) {
+      animation.start({
+        y: 0,
+        opacity: 1,
+        transition: {
+          type: "spring",
+          duration: 1,
+          bounce: 0.3,
+        },
+      });
+    } else {
+      animation.start({
+        y: 50,
+        opacity: 0,
+        transition: {
+          type: "spring",
+          duration: 1,
+          bounce: 0.3,
+        },
+      });
+    }
+  }, [inView, animation]);
 
   // useEffect(() => {
   //   setTimeout(function () {
@@ -23,10 +54,10 @@ function Contact() {
   // }, [ReCAPTCHA]);
 
   const {
-    register,
+    // register,
     handleSubmit,
     reset,
-    formState: { errors },
+    // formState: { errors },
   } = useForm();
 
   useEffect(() => {
@@ -34,14 +65,14 @@ function Contact() {
   }, [captchaToken]);
 
   const handleOnChange = (value) => {
-    console.log("Verified value:", value);
+    // console.log("Verified value:", value);
     setCaptchaToken(value);
     setVerified(true);
   };
 
   const sendEmail = () => {
     // e.preventDefault();
-    console.log("Done!");
+    // console.log("Done!");
     // toast.loading("Sending the email...📨");
     const emailJSFunction = emailjs
       .sendForm(
@@ -52,11 +83,11 @@ function Contact() {
       )
       .then(
         (result) => {
-          console.log("Success! ", result.text);
+          // console.log("Success! ", result.text);
           // toast.success("Email sent successfully!📧😊");
         },
         (error) => {
-          console.log("Error!", error.text);
+          // console.log("Error!", error.text);
           // toast.error("Error sending the email!📧😢");
         }
       );
@@ -65,6 +96,7 @@ function Contact() {
       success: "Email sent successfully!📧😊",
       error: "Error sending the email!📧😢",
     });
+    setVerified(false);
     reset();
     // e.target.reset();
   };
@@ -72,11 +104,19 @@ function Contact() {
   return (
     <div className="contact__wrapper" id="contact">
       <Toaster position="bottom-center" />
-      <div className="contact__header">
-        <h3>It doesn't have to end here, let's connect!</h3>
-      </div>
+      <motion.div className="contact__header" ref={ref} animate={animation}>
+        <h2>Contact Me</h2>
+        <h4>
+          It doesn't have to end here,
+          <span style={{ color: "#41c867" }}> let's connect!</span>
+        </h4>
+      </motion.div>
       <form ref={form} id="contact-form" onSubmit={handleSubmit(sendEmail)}>
-        <div className="contact__form__body">
+        <motion.div
+          className="contact__form__body"
+          ref={ref}
+          animate={animation}
+        >
           <div className="contact__left">
             <input
               type="text"
@@ -145,10 +185,11 @@ function Contact() {
               <span className="errorMessage">Please enter a message</span>
             )} */}
           </div>
-        </div>
+        </motion.div>
         <div className="contact__captcha">
           <ReCAPTCHA
             sitekey={process.env.REACT_APP_RECAPTCHA_KEY}
+            // sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
             onChange={handleOnChange}
           />
         </div>
@@ -157,7 +198,7 @@ function Contact() {
           className="contact__submit__button"
           disabled={!verified}
         >
-          Send
+          Let's Collaborate
         </button>
       </form>
       <div className="contact">
@@ -199,7 +240,7 @@ function Contact() {
           <TwitterIcon sx={{ fontSize: 36 }} />
         </a>
       </div>
-      <div className="blogs">
+      {/* <div className="blogs">
         <h4>
           Blogs: abhiramsatpute.hashnode.dev{" "}
           <a
@@ -210,7 +251,7 @@ function Contact() {
             <LaunchIcon sx={{ marginBottom: "-6px", color: "whitesmoke" }} />
           </a>
         </h4>
-      </div>
+      </div> */}
     </div>
   );
 }
