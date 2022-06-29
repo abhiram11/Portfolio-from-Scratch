@@ -2,40 +2,9 @@ import React, { useState, useEffect, useCallback, useRef } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
 import qdic from "../../media/Titan4.avif";
-import Lazyqdic from "../../media/LazyTitan4.jpg";
 import iimcip from "../../media/IIMCIP.avif";
-import Lazyiimcip from "../../media/LazyIIMCIP.jpg";
 import titan from "../../media/Titan.avif";
-import Lazytitan from "../../media/LazyTitan.jpg";
 import "./BlogsCarousel.css";
-import { LazyLoadImage } from "react-lazy-load-image-component";
-
-// const media = [
-//   {
-//     title: "Flash Notes #1 React",
-//     url: "https://abhiramsatpute.hashnode.dev/_next/image?url=https%3A%2F%2Fcdn.hashnode.com%2Fres%2Fhashnode%2Fimage%2Funsplash%2FUYsBCu9RP3Y%2Fupload%2Fv1645957854157%2F6vEp7zCPx.jpeg%3Fw%3D1600%26h%3D840%26fit%3Dcrop%26crop%3Dentropy%26auto%3Dcompress%2Cformat%26format%3Dwebp&w=1920&q=75",
-//   },
-//   {
-//     title: "Getting Familiar with Docker",
-//     url: "https://abhiramsatpute.hashnode.dev/_next/image?url=https%3A%2F%2Fcdn.hashnode.com%2Fres%2Fhashnode%2Fimage%2Funsplash%2FjOqJbvo1P9g%2Fupload%2Fv1647192180801%2FCmy61vgPC.jpeg%3Fw%3D1600%26h%3D840%26fit%3Dcrop%26crop%3Dentropy%26auto%3Dcompress%2Cformat%26format%3Dwebp&w=1920&q=75",
-//   },
-//   {
-//     title: "React Native for 2022",
-//     url: "https://abhiramsatpute.hashnode.dev/_next/image?url=https%3A%2F%2Fcdn.hashnode.com%2Fres%2Fhashnode%2Fimage%2Funsplash%2F89xuP-XmyrA%2Fupload%2Fv1647249264345%2FpUr0Z3xf3.jpeg%3Fw%3D1600%26h%3D840%26fit%3Dcrop%26crop%3Dentropy%26auto%3Dcompress%2Cformat%26format%3Dwebp&w=1920&q=75",
-//   },
-//   {
-//     title: "React Query",
-//     url: "https://abhiramsatpute.hashnode.dev/_next/image?url=https%3A%2F%2Fcdn.hashnode.com%2Fres%2Fhashnode%2Fimage%2Fupload%2Fv1652031450131%2FFsTZM4uYg.png%3Fw%3D1600%26h%3D840%26fit%3Dcrop%26crop%3Dentropy%26auto%3Dcompress%2Cformat%26format%3Dwebp&w=1920&q=75",
-//   },
-//   {
-//     title: "Cloud Computing and AWS #1",
-//     url: "https://abhiramsatpute.hashnode.dev/_next/image?url=https%3A%2F%2Fcdn.hashnode.com%2Fres%2Fhashnode%2Fimage%2Funsplash%2F-lfF1nJs_qY%2Fupload%2Fv1652289197088%2FH1Dvp5RWd9.jpeg%3Fw%3D1600%26h%3D840%26fit%3Dcrop%26crop%3Dentropy%26auto%3Dcompress%2Cformat%26format%3Dwebp&w=1920&q=75",
-//   },
-//   {
-//     title: "Cloud Computing and AWS #2",
-//     url: "https://abhiramsatpute.hashnode.dev/_next/image?url=https%3A%2F%2Fcdn.hashnode.com%2Fres%2Fhashnode%2Fimage%2Funsplash%2Frymh7EZPqRs%2Fupload%2Fv1652305549031%2FEQLwsDygY.jpeg%3Fw%3D1600%26h%3D840%26fit%3Dcrop%26crop%3Dentropy%26auto%3Dcompress%2Cformat%26format%3Dwebp&w=1920&q=75",
-//   },
-// ];
 
 const PrevButton = ({ enabled, onClick }) => (
   <button
@@ -101,11 +70,9 @@ const BlogsCarousel = ({ options = { loop: true } }) => {
     <div className="embla">
       <div className="embla__viewport" ref={emblaRef}>
         <div className="embla__container">
-          {/* {media.map((data) => ( */}
           <div className="embla__slide">
             <div className="embla__slide__inner">
               <div className="experience__wrapper__a">
-                {/* just change their flex start etc stuff.... */}
                 <div className="experience__wrapper__lower">
                   <h4>Titan Technology Tune-in 2.0, Tamil Nadu</h4>
                   <p className="experience__wrapper__duration">
@@ -116,16 +83,11 @@ const BlogsCarousel = ({ options = { loop: true } }) => {
                     (Director, Managing Director, CEO, and other executives).
                   </p>
                 </div>
-                <LazyLoadImage
+                <img
                   src={titan}
                   alt="TTI-2.0"
                   effect="blur"
                   className="experience__wrapper__image"
-                  // style={{
-                  //   height: "340px",
-                  //   "object-fit": "contain",
-                  // }}
-                  placeholderSrc={Lazytitan}
                 />
               </div>
             </div>
@@ -145,12 +107,11 @@ const BlogsCarousel = ({ options = { loop: true } }) => {
                     incubation.
                   </p>
                 </div>
-                <LazyLoadImage
+                <img
                   src={iimcip}
                   alt="IIMCIP"
                   effect="blur"
                   className="experience__wrapper__image"
-                  placeholderSrc={Lazyiimcip}
                 />
               </div>
             </div>
@@ -169,17 +130,15 @@ const BlogsCarousel = ({ options = { loop: true } }) => {
                     company to Senior Management of Qualcomm and investors.
                   </p>
                 </div>
-                <LazyLoadImage
+                <img
                   src={qdic}
                   alt="QDIC"
                   effect="blur"
                   className="experience__wrapper__image"
-                  placeholderSrc={Lazyqdic}
                 />
               </div>
             </div>
           </div>
-          {/* ))} */}
         </div>
       </div>
       <PrevButton onClick={scrollPrev} enabled={prevBtnEnabled} />
@@ -189,9 +148,3 @@ const BlogsCarousel = ({ options = { loop: true } }) => {
 };
 
 export default BlogsCarousel;
-
-/* <img
-  className="embla__slide__img"
-  src={data.url}
-  alt="A cool cat."
-/> */

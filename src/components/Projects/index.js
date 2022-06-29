@@ -1,10 +1,6 @@
 import React, { useEffect } from "react";
 import "./Projects.css";
-// import Video from "../../media/projects3.mp4";
 import Video from "../../media/Projects3-4(no audio 2).m4v";
-// import LazyProject from "../../media/LazyProject3.JPG";
-// import ArrowForwardIcon from "@material-ui/icons/ArrowForward";
-import { LazyLoadComponent } from "react-lazy-load-image-component";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { MdChevronLeft, MdChevronRight } from "react-icons/md";
@@ -89,6 +85,7 @@ function Projects() {
           <div className="cards__slider" id="project__slider">
             {projectData.map((project) => (
               <ProjectCard
+                key={project.title}
                 title={project.title}
                 image={project.image}
                 subtitle={project.subtitle}
@@ -109,30 +106,18 @@ function Projects() {
       </motion.div>
       <div className="projects">
         <div className="projects__background">
-          <LazyLoadComponent>
-            <video
-              className="projects__backgroundVideo"
-              autoPlay
-              loop
-              muted
-              src={Video}
-              type="video/mp4"
-            />
-          </LazyLoadComponent>
+          <video
+            className="projects__backgroundVideo"
+            autoPlay
+            loop
+            muted
+            src={Video}
+            type="video/mp4"
+          />
         </div>
         <h3>
           You can also check out my{" "}
-          <span
-            className="projects__span"
-            // style={{
-            //   color: "black",
-            //   "padding-left": "20px",
-            //   "padding-right": "20px",
-            // }}
-          >
-            Projects
-          </span>{" "}
-          on my GitHub Profile!
+          <span className="projects__span">Projects</span> on my GitHub Profile!
         </h3>
         <div
           className="projects__button"

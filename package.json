@@ -1,7 +1,7 @@
 {
   "name": "abhiram-portfolio-scratch",
   "version": "0.1.0",
-  "homepage": "https://abhiramsatpute.com",
+  "homepage": "https://abhiram11.github.io/Portfolio-from-Scratch",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.6.2",
@@ -17,7 +17,6 @@
     "react-hot-toast": "^2.2.0",
     "react-icons": "^4.4.0",
     "react-intersection-observer": "^9.3.4",
-    "react-lazy-load-image-component": "^1.5.1",
     "react-scripts": "4.0.3",
     "react-scroll": "^1.8.4",
     "react-spring": "^9.4.5",

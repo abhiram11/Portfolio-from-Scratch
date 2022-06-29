@@ -120,7 +120,7 @@ export const data = [
     css: "linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%)",
     height: 400,
     title:
-      "Startups and National Competitions, Research Assistant Experience at IIT",
+      "Startups, National Competitions, Research Assistant Experience at IIT",
   },
   {
     name: "Salt Mountain",

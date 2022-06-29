@@ -1,6 +1,5 @@
 .embla {
   position: relative;
-  /* background-color: #f7f7f7; */
   padding: 0 10px;
   max-width: 1080px;
   margin-left: auto;
@@ -62,7 +61,6 @@
   position: absolute;
   z-index: 1;
   top: 50%;
-  /* transform: translateY(-50%); */
   border: 0;
   width: 30px;
   height: 30px;

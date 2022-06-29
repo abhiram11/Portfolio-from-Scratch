@@ -1,17 +1,7 @@
 import React, { useEffect } from "react";
 import "./Experience.css";
-// import qdic from "../../media/Titan4.avif";
-// import Lazyqdic from "../../media/LazyTitan4.jpg";
-// import iimcip from "../../media/IIMCIP.avif";
-// import Lazyiimcip from "../../media/LazyIIMCIP.jpg";
-// import titan from "../../media/Titan.avif";
-// import Lazytitan from "../../media/LazyTitan.jpg";
-// import prize from "../../media/img_bg_1.jpg";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-
-// import { LazyLoadImage } from "react-lazy-load-image-component";
-
 import BlogsCarousel from "../BlogsCarousel";
 
 //add media queries to remove photos or change sizes etc
@@ -23,7 +13,6 @@ function Experience() {
   const animation = useAnimation();
 
   useEffect(() => {
-    // console.log(inView);
     if (inView) {
       animation.start({
         y: 0,
@@ -86,93 +75,3 @@ function Experience() {
 }
 
 export default Experience;
-
-/* <div className="embla">
-<div className="embla__viewport" ref={viewportRef}>
-  <div className="embla__container">
-    {slides.map((index) => (
-      <div className="embla__slide" key={index}>
-        <div className="embla__slide__inner">
-          <img
-            className="embla__slide__img"
-            src={mediaByIndex(index)}
-            alt="A cool cat."
-          />
-        </div>
-      </div>
-    ))}
-  </div>
-</div>
-<PrevButton onClick={scrollPrev} enabled={prevBtnEnabled} />
-    <NextButton onClick={scrollNext} enabled={nextBtnEnabled} /> </div>*/
-
-// <div className="experience__wrapper__a">
-//           {/* just change their flex start etc stuff.... */}
-//           <div className="experience__wrapper__lower">
-//             <h4>Titan Technology Tune-in 2.0, Tamil Nadu</h4>
-//             <p className="experience__wrapper__duration">
-//               April 2019 - May 2019
-//             </p>
-//             <p>
-//               Showed our product and technology to TITAN senior management
-//               (Director, Managing Director, CEO, and other executives).
-//             </p>
-//           </div>
-//           {/* <div> */}
-//           <LazyLoadImage
-//             src={titan}
-//             alt="TTI-2.0"
-//             effect="blur"
-//             className="experience__wrapper__image"
-//             // style={{
-//             //   height: "340px",
-//             //   "object-fit": "contain",
-//             // }}
-//             placeholderSrc={Lazytitan}
-//           />
-//           {/* </div> */}
-//         </div>
-//         <div className="experience__wrapper__b">
-//           <div className="experience__wrapper__lower">
-//             <h4>Health Trail Programme, IIM Calcutta</h4>
-//             <p className="experience__wrapper__duration">
-//               Jan 2019 - April 2019
-//             </p>
-
-//             <p>
-//               Learned about brand development, market research, GTM strategies,
-//               balance sheets, legal agreements, etc. in this incubation.
-//             </p>
-//           </div>
-//           {/* <div> */}
-//           <LazyLoadImage
-//             src={iimcip}
-//             alt="IIMCIP"
-//             effect="blur"
-//             className="experience__wrapper__image"
-//             placeholderSrc={Lazyiimcip}
-//           />
-//           {/* </div> */}
-//         </div>
-//         <div className="experience__wrapper__a">
-//           {/* just change their flex start etc stuff.... */}
-//           <div className="experience__wrapper__lower">
-//             <h4>Qualcomm Design in India Challenge, Bangalore</h4>
-//             <p className="experience__wrapper__duration">
-//               Sept 2018 - March 2019
-//             </p>
-//             <p>
-//               We ranked in Top 15 Startups in India and represented the company
-//               to Senior Management of Qualcomm and investors.
-//             </p>
-//           </div>
-//           {/* <div> */}
-//           <LazyLoadImage
-//             src={qdic}
-//             alt="QDIC"
-//             effect="blur"
-//             className="experience__wrapper__image"
-//             placeholderSrc={Lazyqdic}
-//           />
-//           {/* </div> */}
-//         </div>

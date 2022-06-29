@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import Video from "../../media/Myname-3.m4v";
-import { LazyLoadComponent } from "react-lazy-load-image-component";
 import Intro from "../Intro";
 import { motion, useAnimation } from "framer-motion";
 import "./TextualContent.css";
@@ -44,12 +43,6 @@ function TextualContent() {
         className="textual__content"
         id="about"
         animate={animation}
-        // variants={fadeUp}
-        // initial="hidden"
-        // animate="visible"
-        // transition={{ duration: 1 }}
-        // whileInView="visible"
-        // viewport={{ once: true }}
       >
         <div className="textual__content__top">
           <div className="textual__content__top__left">
@@ -76,36 +69,8 @@ function TextualContent() {
                 className="video__arrow"
               />
             </p>
-
-            {/* <p>
-            I have worked as a Data Scientist at two startups each comprising of
-            elite individuals, hBits (team of around 12, with grads from
-            Harvard, Stanford, Duke, IIT Madras and Bombay, IIM Ahmedabad and
-            Indore, NIT Nagpur, and other entrepreneurs), and mBreath
-            Technologies (team of 4 with myself being the first full-time hire,
-            two IIT Kharagpur PhD Scholars and an IIT Kharagpur Professor, along
-            with interns from IIT Kharagpur, NIT Raipur, and VIT).
-          </p> */}
-
-            {/* <p>
-        With my experience in data science, fast and dynamic start-up culture,
-        team management and mentorship, assistance in business development,
-        customer profiling, communication and networking, I believe I have the
-        knowledge, drive, and technical skills needed to be the perfect addition
-        to any technical team.
-      </p> */}
           </div>
-          <LazyLoadComponent className="textual__content__top__right">
-            {/* <LazyLoadImage
-            src={Photo}
-            alt="Graphic Signature"
-            effect="blur"
-            style={{
-              width: "320px",
-              "object-fit": "contain",
-            }}
-            placeholderSrc={LazyPhoto}
-          /> */}
+          <div className="textual__content__top__right">
             <video
               className="textual__content__video"
               autoPlay
@@ -114,7 +79,7 @@ function TextualContent() {
               src={Video}
               type="video/mp4"
             />
-          </LazyLoadComponent>
+          </div>
         </div>
       </motion.div>
       <Intro />

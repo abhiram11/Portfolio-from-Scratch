@@ -23,6 +23,7 @@ const Blogs = () => {
         <div className="cards__slider" id="blogs__slider">
           {blogsData.map((blog) => (
             <ProjectCard
+              key={blog.title}
               image={blog?.url}
               title={blog.title}
               blogLink={blog.blog}
