@@ -1,3 +1,9 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
 Disallow:
+
+
+# It's important to update your Robots. txt file if you add pages, 
+# files, or directories to your site that you don't wish to be indexed by the search engines 
+# or accessed by web users. This will ensure the security of your website
+# and the best possible results with your search engine optimization

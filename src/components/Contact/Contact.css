@@ -33,14 +33,6 @@
   object-fit: contain;
 }
 
-/* .blogs > a {
-  color: whitesmoke;
-}
-
-.blogs > h4 {
-  color: whitesmoke;
-} */
-
 .contact__form__body {
   display: flex;
   flex-direction: row;

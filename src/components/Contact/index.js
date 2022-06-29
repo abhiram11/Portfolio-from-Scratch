@@ -1,5 +1,4 @@
 import React, { useEffect, useRef, useState } from "react";
-import { LazyLoadImage } from "react-lazy-load-image-component";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import YouTubeIcon from "@mui/icons-material/YouTube";
@@ -23,7 +22,6 @@ function Contact() {
   const animation = useAnimation();
 
   useEffect(() => {
-    // console.log(inView);
     if (inView) {
       animation.start({
         y: 0,
@@ -47,33 +45,18 @@ function Contact() {
     }
   }, [inView, animation]);
 
-  // useEffect(() => {
-  //   setTimeout(function () {
-  //     window.location.reload();
-  //   }, 1000);
-  // }, [ReCAPTCHA]);
-
-  const {
-    // register,
-    handleSubmit,
-    reset,
-    // formState: { errors },
-  } = useForm();
+  const { handleSubmit, reset } = useForm();
 
   useEffect(() => {
     captchaToken ? setVerified(true) : setVerified(false);
   }, [captchaToken]);
 
   const handleOnChange = (value) => {
-    // console.log("Verified value:", value);
     setCaptchaToken(value);
     setVerified(true);
   };
 
   const sendEmail = () => {
-    // e.preventDefault();
-    // console.log("Done!");
-    // toast.loading("Sending the email...📨");
     const emailJSFunction = emailjs
       .sendForm(
         process.env.REACT_APP_SERVICE_ID,
@@ -82,14 +65,8 @@ function Contact() {
         process.env.REACT_APP_PUBLIC_KEY
       )
       .then(
-        (result) => {
-          // console.log("Success! ", result.text);
-          // toast.success("Email sent successfully!📧😊");
-        },
-        (error) => {
-          // console.log("Error!", error.text);
-          // toast.error("Error sending the email!📧😢");
-        }
+        (result) => {},
+        (error) => {}
       );
     toast.promise(emailJSFunction, {
       loading: "Sending the email...📨",
@@ -98,7 +75,6 @@ function Contact() {
     });
     setVerified(false);
     reset();
-    // e.target.reset();
   };
 
   return (
@@ -126,21 +102,8 @@ function Contact() {
               required
               maxLength={32}
               minLength={4}
-              // {...register("from_name", {
-              //   required: { value: true, message: "Please enter your name" },
-              //   maxLength: {
-              //     value: 30,
-              //     message: "Please use 30 characters or less",
-              //   },
-              //   minLength: {
-              //     value: 4,
-              //     message: "Please use 4 characters or more",
-              //   },
-              // })}
             />
-            {/* {errors.from_name && (
-              <span className="errorMessage">{errors.from_name.message}</span>
-            )} */}
+
             <input
               type="email"
               name="email"
@@ -148,26 +111,15 @@ function Contact() {
               placeholder="Your Email"
               required
             />
-            {/* {errors.email && (
-              <span className="errorMessage">
-                Please enter a valid email address
-              </span>
-            )} */}
+
             <input
               type="text"
               name="phone"
-              // {...register("phone", {
-              //   required: false,
-              //   pattern: /^[a-zA-Z0-9\-().\s]{10,15}$/,
-              // })}
               className="contact__left__input"
               maxLength={15}
               minLength={10}
               placeholder="Contact No. (Optional)"
             />
-            {/* {errors.phone && (
-              <span className="errorMessage">{errors.phone.message}</span>
-            )} */}
           </div>
           <div className="contact__right">
             <textarea
@@ -175,21 +127,14 @@ function Contact() {
               name="message"
               required
               className="contact__right__input"
-              // {...register("message", {
-              //   required: true,
-              // })}
               placeholder="Message"
               style={{ resize: "none" }}
             />
-            {/* {errors.message && (
-              <span className="errorMessage">Please enter a message</span>
-            )} */}
           </div>
         </motion.div>
         <div className="contact__captcha">
           <ReCAPTCHA
             sitekey={process.env.REACT_APP_RECAPTCHA_KEY}
-            // sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
             onChange={handleOnChange}
           />
         </div>
@@ -217,7 +162,7 @@ function Contact() {
           target="_blank"
           rel="noreferrer"
         >
-          <LazyLoadImage
+          <img
             src="https://stackoverflow.com/users/flair/8185479.png?theme=dark"
             alt="Stack Overflow"
             effect="blur"
@@ -240,18 +185,6 @@ function Contact() {
           <TwitterIcon sx={{ fontSize: 36 }} />
         </a>
       </div>
-      {/* <div className="blogs">
-        <h4>
-          Blogs: abhiramsatpute.hashnode.dev{" "}
-          <a
-            href="https://abhiramsatpute.hashnode.dev/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <LaunchIcon sx={{ marginBottom: "-6px", color: "whitesmoke" }} />
-          </a>
-        </h4>
-      </div> */}
     </div>
   );
 }
