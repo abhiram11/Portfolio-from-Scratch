@@ -1,7 +1,7 @@
 .header {
   position: fixed;
   width: 100%;
-  top: 0;
+  top: -50px;
   display: flex;
   justify-content: space-between;
   background-color: transparent;
@@ -12,12 +12,13 @@
   opacity: 0;
 
   /* transition-timing-function: ease-in; */
-  transition: all 0.5s ease-in;
+  transition: all 0.6s ease-in;
 }
 
 .header__bg {
   /* background-color: #04294e; */
   /* background-color: #07529c; */
+  top: 0;
   background-color: #26212e;
   box-shadow: rgba(0, 0, 0, 0.65) 0px 25px 20px -20px;
   opacity: 1;
