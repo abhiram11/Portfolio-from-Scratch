@@ -9,8 +9,8 @@
   display: block;
   width: 20px;
   height: 20px;
-  border-bottom: 4px solid #06a8ff;
-  border-right: 4px solid #06a8ff;
+  border-bottom: 4px solid #d400ff;
+  border-right: 4px solid #d400ff;
   transform: rotate(45deg);
   margin: -8px;
   animation: scroll 2s infinite;

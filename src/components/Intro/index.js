@@ -54,7 +54,7 @@ function Intro() {
                 <br />
                 makes me
                 <br />
-                Unique
+                Unique!
               </h3>
             </div>
           )}

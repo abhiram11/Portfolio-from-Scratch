@@ -3,6 +3,7 @@ import ProjectCard from "../ProjectCard";
 import "./Blogs.css";
 import { blogsData } from "./data";
 import { MdChevronLeft, MdChevronRight } from "react-icons/md";
+import { LazyLoadComponent } from "react-lazy-load-image-component";
 
 const Blogs = () => {
   const slideLeft = () => {
@@ -16,7 +17,7 @@ const Blogs = () => {
   };
 
   return (
-    <div className="blogs">
+    <LazyLoadComponent threshold={300} className="blogs">
       <h2>Blogs</h2>
       <div className="blogs__content__cards">
         <MdChevronLeft size={56} onClick={slideLeft} className="slider__icon" />
@@ -36,7 +37,7 @@ const Blogs = () => {
           className="slider__icon"
         />
       </div>
-    </div>
+    </LazyLoadComponent>
   );
 };
 

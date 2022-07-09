@@ -5,6 +5,7 @@ import qdic from "../../media/Titan4.avif";
 import iimcip from "../../media/IIMCIP.avif";
 import titan from "../../media/Titan.avif";
 import "./BlogsCarousel.css";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const PrevButton = ({ enabled, onClick }) => (
   <button
@@ -83,10 +84,10 @@ const BlogsCarousel = ({ options = { loop: true } }) => {
                     (Director, Managing Director, CEO, and other executives).
                   </p>
                 </div>
-                <img
+                <LazyLoadImage
                   src={titan}
                   alt="TTI-2.0"
-                  effect="blur"
+                  effect="opacity"
                   className="experience__wrapper__image"
                 />
               </div>
@@ -107,10 +108,10 @@ const BlogsCarousel = ({ options = { loop: true } }) => {
                     incubation.
                   </p>
                 </div>
-                <img
+                <LazyLoadImage
                   src={iimcip}
                   alt="IIMCIP"
-                  effect="blur"
+                  effect="opacity"
                   className="experience__wrapper__image"
                 />
               </div>
@@ -130,10 +131,10 @@ const BlogsCarousel = ({ options = { loop: true } }) => {
                     company to Senior Management of Qualcomm and investors.
                   </p>
                 </div>
-                <img
+                <LazyLoadImage
                   src={qdic}
                   alt="QDIC"
-                  effect="blur"
+                  effect="opacity"
                   className="experience__wrapper__image"
                 />
               </div>

@@ -1,8 +1,10 @@
 import React from "react";
 import Typical from "react-typical";
-import Video from "../../media/magic-1080.mp4";
+import Video from "../../media/moon.m4v";
 import "./Banner2.css";
 import { motion } from "framer-motion";
+import bannerThumbnail from "../../media/thumbnail.avif";
+
 import DownArrow from "./DownArrow";
 
 function Banner() {
@@ -27,6 +29,7 @@ function Banner() {
             muted
             src={Video}
             type="video/mp4"
+            poster={bannerThumbnail}
           />
         </div>
       </div>

@@ -24,7 +24,8 @@
 }
 
 .slider__icon {
-  opacity: 0.5;
+  color: #4f455f;
+  opacity: 0.8;
   cursor: pointer;
   transition: opacity 0.2s ease-in-out;
 }

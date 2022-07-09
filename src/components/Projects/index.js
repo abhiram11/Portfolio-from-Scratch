@@ -10,6 +10,7 @@ import "./Projects.css";
 import ProjectCard from "../ProjectCard";
 import { projectData } from "./projectsData";
 import { useState } from "react";
+import { LazyLoadComponent } from "react-lazy-load-image-component";
 
 function Projects() {
   const [hover, setHover] = useState(false);
@@ -62,7 +63,7 @@ function Projects() {
   };
 
   return (
-    <>
+    <LazyLoadComponent threshold={300}>
       <motion.div
         className="project__content"
         id="projects"
@@ -139,7 +140,7 @@ function Projects() {
           </a>
         </div>
       </div>
-    </>
+    </LazyLoadComponent>
   );
 }
 

@@ -62,11 +62,11 @@
   z-index: 1;
   top: 50%;
   border: 0;
-  width: 30px;
-  height: 30px;
+  width: 26px;
+  height: 26px;
   justify-content: center;
   align-items: center;
-  fill: #1bcacd;
+  fill: #6c5e82;
   padding: 0;
   transition: all 0.3s ease-out;
 }

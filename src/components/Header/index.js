@@ -7,15 +7,16 @@ import { Link as LinkS } from "react-scroll";
 
 function Header() {
   const [show, handleShow] = useState(false);
+  const scrollHandler = function () {
+    if (window.scrollY > 200) {
+      handleShow(true);
+    } else handleShow(false);
+  };
 
   useEffect(() => {
-    window.addEventListener("scroll", () => {
-      if (window.scrollY > 200) {
-        handleShow(true);
-      } else handleShow(false);
-    });
+    window.addEventListener("scroll", scrollHandler);
     return () => {
-      window.removeEventListener("scroll"); //remove listener redundancy, not called 20 times, etc...
+      window.removeEventListener("scroll", scrollHandler); //remove listener redundancy, not called 20 times, etc...
     };
   }, []);
 

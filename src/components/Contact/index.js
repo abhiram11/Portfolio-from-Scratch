@@ -10,6 +10,7 @@ import toast, { Toaster } from "react-hot-toast";
 import ReCAPTCHA from "react-google-recaptcha";
 import { useInView } from "react-intersection-observer";
 import { motion, useAnimation } from "framer-motion";
+import { LazyLoadComponent } from "react-lazy-load-image-component";
 
 function Contact() {
   const form = useRef();
@@ -78,7 +79,7 @@ function Contact() {
   };
 
   return (
-    <div className="contact__wrapper" id="contact">
+    <LazyLoadComponent className="contact__wrapper" id="contact">
       <Toaster position="bottom-center" />
       <motion.div className="contact__header" ref={ref} animate={animation}>
         <h2>Contact Me</h2>
@@ -185,7 +186,7 @@ function Contact() {
           <TwitterIcon sx={{ fontSize: 36 }} />
         </a>
       </div>
-    </div>
+    </LazyLoadComponent>
   );
 }
 
