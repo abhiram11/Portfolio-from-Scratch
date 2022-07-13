@@ -17,7 +17,8 @@ export const projectData = [
     thumbnail:
       "https://raw.githubusercontent.com/abhiram11/Simple-Concepts-and-Insights/master/MediaImages/Tinder.avif",
     demo: null,
-    github: null,
+    github:
+      "https://github.com/abhiram11/Tinder-Clone-RNative-Auth-Tailwind-StackNav",
     youtube: "https://www.youtube.com/watch?v=PdPoZLLXtUY",
     project: true,
   },
