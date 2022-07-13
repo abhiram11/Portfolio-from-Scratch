@@ -51,7 +51,7 @@ export const projectData = [
     thumbnail:
       "https://raw.githubusercontent.com/abhiram11/Simple-Concepts-and-Insights/master/MediaImages/Zomato.avif",
     demo: null,
-    github: null,
+    github: "https://github.com/abhiram11/Zomato-AppClone-React-Native",
     youtube: "https://www.youtube.com/watch?v=RMwmN4j0s5s",
     project: true,
   },
