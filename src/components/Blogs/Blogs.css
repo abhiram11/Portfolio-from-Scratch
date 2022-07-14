@@ -1,13 +1,19 @@
-.blogs {
+/* Blogs classname not working with lazyloadcomponent and i dont know why!! */
+
+/* .blogs {
   padding: 1.5rem 0.5rem;
+  border: 1px solid black;
   border-top: 1px solid #e6e6e6;
 }
 
 .blogs > h2 {
   padding-bottom: 1rem;
-}
+} */
 
 .blogs__content__cards {
+  max-width: 1380px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   position: relative;
   display: flex;
   align-items: center;

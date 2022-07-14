@@ -61,12 +61,17 @@ function Experience() {
             • Developed real-time audio analysis and classification, sleep apnea
             detection, and sleep stage classification.
             <br />
-            <br />• Worked on assisting the CxOs at multiple fronts as
+            <br />• Worked on assisting the CxOs at multiple fronts as an
             intrapreneur.
           </p>
         </div>
       </div>
-      <h2 style={{ borderTop: "1px solid #e6e6e6", paddingTop: "2rem" }}>
+      <h2
+        style={{
+          borderTop: "1px solid #e6e6e6",
+          paddingTop: "2rem",
+        }}
+      >
         Competitions and Entrepreneurship Experiences
       </h2>
       <BlogsCarousel />

@@ -127,7 +127,8 @@ export const data = [
     description: " #FFFEFF → #D7FFFE",
     css: "linear-gradient(135deg, #FFFEFF 0%, #D7FFFE 100%)",
     height: 200,
-    title: "In Progress: Redis, SanityIO, Docker and Kubernetes",
+    title:
+      "In Progress: Redis, SanityIO, Bun and NestJS, Docker and Kubernetes",
   },
   // {
   //   name: "New York",

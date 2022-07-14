@@ -1,5 +1,6 @@
 .project__content {
-  padding: 2rem 0.5rem;
+  max-width: 1380px;
+  padding: 1.5rem 0.5rem;
   border-top: 1px solid #e6e6e6;
 }
 
