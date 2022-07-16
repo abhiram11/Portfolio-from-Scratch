@@ -68,7 +68,7 @@ function Experience() {
       </div>
       <h2
         style={{
-          borderTop: "1px solid #e6e6e6",
+          borderTop: "2px solid #e6e6e6",
           paddingTop: "2rem",
         }}
       >

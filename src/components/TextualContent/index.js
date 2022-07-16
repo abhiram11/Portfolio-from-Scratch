@@ -50,15 +50,14 @@ function TextualContent() {
             <br />
             <p>
               I'm Abhiram, a budding Full-Stack Developer, an experienced Data
-              Scientist in Real Estate and Healthcare Industries, and a
-              full-time learner! 🚀
+              Scientist, and a full-time learner! 🚀
               <br />
-              <br />I have worked with elite individuals with grads from
-              Harvard, Stanford, Duke, IIT Madras Bombay and Kharagpur, IIM
-              Ahmedabad and Indore, NITs, and with a few entrepreneurs in my
-              journey.
+              <br />I have worked in Real Estate and Healthcare Industries,
+              especially in startups, with grads from Harvard, Stanford, Duke,
+              IIT Madras Bombay and Kharagpur, IIM Ahmedabad and Indore, NITs,
+              and with a few entrepreneurs in my journey.
               <br />
-              <br />I have a degree in CS (IT, First-Division with Distinction),
+              <br />I have a Degree in CS (IT, First-Division with Distinction),
               and have also been to IIT Kharagpur and IIM Calcutta, not as a
               student, but as an entrepreneur.
             </p>

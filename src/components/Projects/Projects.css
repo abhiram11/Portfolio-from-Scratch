@@ -1,7 +1,7 @@
 .project__content {
   max-width: 1380px;
-  padding: 1.5rem 0.5rem;
-  border-top: 1px solid #e6e6e6;
+  padding: 1.5rem 0.5rem 2rem 0.5rem;
+  border-top: 2px solid #e6e6e6;
 }
 
 .project__content__top > p {
